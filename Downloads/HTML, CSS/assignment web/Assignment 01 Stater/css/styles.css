@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+}
+
+/* h2 */
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  color: #0e2452;
+  margin: 0;
+}
+
+/* paragraph */
+p {
+  margin: 0;
+}
+
+#info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#info p {
+  display: inline-block;
+}
+
+#info p:first-child {
+  font-weight: bold;
+}
+
+#info p:last-child {
+  position: absolute;
+  left: 140px;
+}
+
+img {
+  position: absolute;
+  height: 113px;
+  width: 113px;
+  top: 0;
+  right: 0;
+}
+
+#target {
+  margin: 40px;
+}
+
+.section-content h2 {
+  text-transform: uppercase;
+}
+
+.cv {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.project h2 {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-left {
+  width: 30%;
+}
+
+.flex-right {
+  width: 70%;
+}
+
+/* liên hệ */
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+
+.timeline {
+  padding-left: 0;
+}
+
+.timeline li {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding-bottom: 1px;
+  padding-left: 20px;
+}
+
+.timeline li::before {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 6px;
+  width: 1px;
+}
+
+.timeline li::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  top: 5px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+}
+
+.education-hr {
+  margin-top: 20px;
+}
+
+.experience-hr {
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 5px;
+}

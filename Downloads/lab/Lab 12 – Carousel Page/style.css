@@ -1,0 +1,35 @@
+body::before {
+  display: block;
+  content: "";
+  height: 50px;
+}
+
+/* .bg-img1 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("img/nino.jpeg");
+  display: block;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+
+.bg-img2 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("img/nino.jpeg");
+  display: block;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+
+.bg-img3 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url("img/nino.jpeg");
+  display: block;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+} */

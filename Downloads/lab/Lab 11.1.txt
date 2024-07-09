@@ -1,0 +1,47 @@
+** start of undefined **
+
+<h1 id="title">freeCodeCamp Survey Form</h1>
+
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<form id="survey-form">
+  <input id="name" type="text" placeholder="Enter your name" required />
+
+  <input id="email" type="email" placeholder="Enter your Email" required/>
+
+  <input id="number" type="number" placeholder="Age" min="1" max="18" required/>
+
+  <label id="name-label">Definitely</label>
+  <label id="email-label">Definitely</label>
+  <label id="number-label">Definitely</label>
+
+  <select id="dropdown">
+  <option value="car">car</option>
+  <option value="coat">coat</option>
+</select>
+
+<input type="radio" value="html" name="html"/>
+<input type="radio" value="css" name="css" />
+<input type="radio" value="html" name="html"/>
+<input type="radio" value="css" name="css" />
+
+<input type="checkbox" value="html" name="html" />
+<input type="checkbox" value="css" name="css" />
+
+<textarea></textarea>
+
+<button id="submit" type="submit"></button>
+</form>
+
+
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+

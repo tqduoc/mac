@@ -1,0 +1,33 @@
+:active           	a:active	Chọn link còn hoạt động
+:checked          	input:checked	Chọn mọi phần tử <input> đã kiểm tra
+:disabled	         input:disabled	Chọn mọi phần tử <input> bị vô hiệu hóa
+:empty           	p:empty	Chọn mọi phần tử <p> không có phần tử con
+:enabled        	input:enabled	Chọn mọi phần tử <input> đã kích hoạt
+:first-child      	p:first-child	Chọn mọi phần tử <p> là phần tử con đầu tiên của phần tử cha của nó
+:first-of-type    	p:first-of-type	Chọn mọi phần tử <p> là phần tử <p> đầu tiên của phần tử cha của nó
+:focus          	input:focus	Chọn phần tử <input> có tiêu điểm
+:hover          	a:hover	Chọn các link khi di chuột qua
+:in-range        	input:in-range	Chọn các phần tử <input> có giá trị trong một phạm vi được chỉ định
+:invalid           	input:invalid	Chọn tất cả các phần tử <input> có giá trị không hợp lệ
+:lang(language)  	p:lang(it)	Chọn mọi phần tử <p> có giá trị thuộc tính lang bắt đầu bằng "it"
+:last-child      	 p:last-child	Chọn mọi phần tử <p> là phần tử con cuối cùng của phần tử cha
+:last-of-type       	p:last-of-type	Chọn mọi phần tử <p> là phần tử <p> cuối cùng của phần tử cha
+:link           	a:link	Chọn tất cả các link không được truy cập
+:not(selector)    	:not(p)	
+Chọn mọi phần tử không phải là phần tử <p>
+
+:nth-child(n)            	p:nth-child(2)	Chọn mọi phần tử <p> là phần tử con thứ hai của phần tử cha
+:nth-last-child(n)          	p:nth-last-child(2)	Chọn mọi phần tử <p> là phần tử con thứ hai của phần tử cha, tính từ phần tử cuối cùng
+:nth-last-of-type(n)         	p:nth-last-of-type(2)	Chọn mọi phần tử <p> là phần tử <p> thứ hai của phần tử cha, tính từ phần tử con cuối cùng
+:nth-of-type(n) 	p:nth-of-type(2)	Chọn mọi phần tử <p> là phần tử <p> thứ hai của phần tử cha
+:only-of-type	        p:only-of-type	Chọn mọi phần tử <p> là phần tử <p> duy nhất của phần tử cha
+:only-child        	p:only-child	Chọn mọi phần tử <p> là phần tử con duy nhất của phần tử cha
+:optional          	input:optional	Chọn các phần tử <input> không có thuộc tính "required"
+:out-of-range          	input:out-of-range	Chọn các phần tử <input> có giá trị nằm ngoài phạm vi được chỉ định
+:read-only        	input:read-only	Chọn các phần tử <input> có thuộc tính chỉ định "readonly"
+:read-write        	input:read-write	Chọn các phần tử <input> không có thuộc tính "readonly"
+:required          	input:required	Chọn các phần tử <input> có thuộc tính chỉ định "required"
+:root	root	Chọn phần tử gốc của tài liệu
+:target	#news:target	Chọn phần tử #news hiện tại đang hoạt động (nhấp vào URL chứa tên liên kết đó)
+:valid	input:valid	Chọn tất cả các phần tử <input> có giá trị hợp lệ
+:visited	a:visited	Chọn tất cả các link đã truy cập

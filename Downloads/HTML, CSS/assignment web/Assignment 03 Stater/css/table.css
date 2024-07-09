@@ -1,0 +1,36 @@
+@media (max-width: 1100px) {
+  .nav-avatar {
+    display: none;
+  }
+
+  .style-nav > a {
+    display: inline;
+    width: auto;
+  }
+  .style-nav > a > i {
+    padding: 0;
+  }
+
+  #job-info > .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: auto;
+  }
+
+  #certificate > .container {
+    width: auto;
+  }
+
+  .introduce {
+    height: 500px;
+  }
+  .individual {
+    height: 120px;
+  }
+
+  .img-cert {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}

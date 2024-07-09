@@ -1,0 +1,1958 @@
+[Music]
+Chào mọi người. Trong video này,
+ta sẽ thực hiện xây một trang web
+Bootstrap 5
+cho một bootcamp giả lập. Đây là một khóa học cấp tốc,
+trong đó ta sẽ tìm hiểu cách
+thiết lập bootstrap và
+một số đầu việc có liên quan. Ta cũng sẽ tìm hiểu
+một vài lớp phổ biến nhất
+như navbar, card,
+grid, flex, v.v.
+Và tôi muốn giới thiệu những thành phần này đến các bạn
+theo kiểu vừa học vừa làm
+chứ không phải dưới dạng
+video tài liệu lý thuyết.
+Ở đây, ta sẽ thực hiện
+thêm một navbar ở trên cùng,
+thiết lập thanh cuộn để cuộn lên cuộn xuống trang web,
+một khoảng không gian showcase có chứa hình ảnh,
+sử dụng flexbox,
+chính xác hơn là lớp flex
+mà Bootstrap cung cấp,
+cả thành phần newsletter nữa.
+Tiếp tục, ta sẽ nghiên cứu grid CSS
+cũng như hệ thống Bootstrap grid
+để tạo các ô lưới
+kiểu như trên màn hình.
+Sau đó ta tìm hiểu cách sử dụng Bootstrap icon.
+Tiếp tục là các hình ảnh và nội dung ở đây,
+rồi ta lại sử dụng thành phần accordion
+cho phần các câu hỏi thường gặp (Frequently Asked Questions - FAQ).
+
+Kéo xuống bên dưới, ta có một số thẻ chứa thông tin của giảng viên hướng dẫn.
+Dưới cùng là thông tin liên hệ.
+Ta cũng sẽ thêm một phần bản đồ chỉ đường  bằng cách sử dụng
+mapbox.
+Kế đến là chân trang.
+Phía trên, ta sẽ thêm một thành phần modal.
+Ta nhấn Start The Enrollment để mở modal.
+Ta sẽ sử dụng thiết kế responsive, do vậy,
+khi co kéo màn hình,
+thiết kế trông vẫn ổn.
+Trên các màn hình kích thước nhỏ, mọi thứ sẽ được sắp xếp thành ngăn,
+tức là sử dụng kiểu menu hamburger.
+Được rồi. Vậy là tôi đã giới thiệu những gì ta cần xây dựng trong video hôm nay.
+Video này do HOSTINGER tài trợ.
+Ở cuối video, ta sẽ thực hiện
+triển khai trên một tài khoản host
+bằng cách tải sản phẩm của mình lên
+
+GitHub và sử dụng sản phẩm đã được tải lên GitHub
+để triển khai trên Hostinger,
+một trang web cực kỳ hữu dụng, cung cấp
+dịch vụ host đáng tin cậy với mức giá phải chăng.
+Hãy ghé thăm trang web này. Hostinger cung cấp
+đủ loại dịch vụ host như thông qua đám mây được chia sẻ,
+wordpress,
+các server riêng tư ảo, v.v.
+Tôi sẽ để link giảm giá 10% ở dưới phần mô tả video.
+Các bạn hãy dành thời gian ghé thăm Hostinger nhé.
+Rồi,
+ta bắt tay vào việc thôi.
+Tôi mở phần tài liệu Bootstrap 5.
+Ta có thể tham khảo
+tài liệu này
+trong suốt project để tìm kiếm
+các lớp và thành phần.
+Nếu chưa từng sử dụng Bootstrap
+hoặc chưa bao giờ được tiếp xúc với
+bất kỳ framework CSS nào thì để tôi giải thích ngắn gọn như sau.
+Ta có một tập hợp các lớp đã được xác định trước,
+giúp tạo các phần tử cụ thể. Tài liệu Bootstrap
+sẽ bao gồm một số ví dụ minh họa việc sử dụng các lớp đó.
+Ví dụ, ta đi đến phần Components (Thành phần),
+chọn Buttons (Nút) chẳng hạn,
+ta sẽ thấy ví dụ về các nút
+và các lớp cụ thể, chẳng hạn như btn,
+một lớp nền tảng cho các nút.
+Ngoài ra còn có các lớp khác như
+primary, secondary, success ứng với mỗi màu phía trên.
+
+Ta còn có các kiểu viền
+cùng một vài lớp liên quan đến kiểu viền.
+Dưới này là các lớp cho kích thước nút, gồm btn-lg (lớn)
+và btn-sm (nhỏ).
+Ta gần như có thể tìm được bất kỳ thứ gì cần sử dụng trong tài liệu này,
+gồm các thành phần,
+biểu mẫu và các lớp cho biểu mẫu,
+layout và các lớp cho layout, chẳng hạn như
+grid system
+Ta sẽ tìm hiểu kỹ về chúng
+trong project này.
+Ví dụ ở đây, ta vào xem thành phần accordion,
+đây là thiết kế động, ta có thể
+nhấn vào từng mục.
+Ta cần gói Bootstrap JavaScript
+
+cho thành phần accordion, modal, popover,
+v.v.
+Rồi. Đầu tiên,
+ta sẽ
+tìm cách để có thể sử dụng được Bootstrap.
+Có nhiều cách khác nhau để làm vậy.
+Ta sẽ làm theo cách ngon, bổ, rẻ
+là sử dụng CDN.
+
+Ta chỉ việc thêm
+link có chứa
+file Bootstrap CSS mặc định,
+cùng với link chứa
+bundle JavaScript để có thể sử dụng
+các thành phần modal và accordion.
+Nhược điểm của việc sử dụng CDN là
+ta không thể tùy chỉnh Bootstrap CSS.
+Chắc chắn sẽ có lúc ta cần tùy chỉnh Bootstrap CSS.
+Để làm vậy,
+ta cần tải xuống file nguồn.
+Vào mục Download,
+
+đừng chọn Compiled CSS and JS
+mà hãy chọn Source files
+thì mới có được toàn bộ
+các file Bootstrap Sass.
+Sass là một bộ tiền xử lý CSS
+hay trình tiền biên dịch,
+cho phép chỉnh sửa
+
+các biến Bootstrap, chẳng hạn như
+màu nguyên thủy,
+màu thứ cấp, kích thước phông chữ trong nút.
+Nếu muốn tùy chỉnh
+các thứ tôi vừa kể ra bên trên
+thì ta cần chỉnh sửa các file Sass
+rồi sau đó biên dịch bằng trình biên dịch file Sass,
+nhưng phần này vượt quá phạm vi bài tập rồi.
+Với bài tập này, tôi chủ yếu muốn
+tập trung vào các lớp Bootstrap
+và hướng dẫn cách tạo layout website bằng Bootstrap mà thôi.
+
+Có thể tôi sẽ quay một video khác
+hướng dẫn cách tùy chỉnh file Sass, kèm các bước thiết lập
+và sử dụng công cụ cần thiết.
+Rồi, với bài tập này, ta sẽ chỉ sử dụng CND.
+Ta chuyển đến trình chỉnh sửa văn bản,
+ở đây tôi sử dụng VSCode.
+Ở đây, tôi đã có sẵn
+một file index.html và một file style.css trống.
+Ta sẽ không viết ra một đống các phong cách tùy chỉnh
+mà chỉ tạo ra trang để thêm một số thứ
+về sau này mà thôi.
+Tiếp đến là folder img
+với một số hình ảnh ở dạng svg.
+showcase.svg chính là hình ảnh người ngồi lập trình máy tính ở đây.
+
+fundamentals.svg là hình ảnh 3 người bê 3 biểu tượng CSS, JS và HTML.
+Cuối cùng là react.svg, là hình ảnh một người ngồi trên một nguyên tử.
+Các hình ảnh này đều là từ undraw.co. Trang web này có
+rất nhiều hình minh họa stock hay ho
+mà lại miễn phí.
+Ta bắt đầu với file index.html.
+Đóng phần sidebar.
+Ta sẽ sử dụng bản mẫu.
+Chọn Emmet Abbreviation.
+Tại dòng title, nhập Frontend Bootcamp.
+
+Sau đó, ta cần
+
+thêm Bootstrap với CDN.
+Tại trang tài liệu Bootstrap,
+sao chép link
+và dán vào
+ngay phía trên dòng title
+Phía dưới, tôi thêm
+link đến stylesheet tùy chỉnh.
+Với href, nhập style.css.
+Ta cần thêm cả bundle JavaScript nữa.
+
+Tại mục Bundle của tài liệu, sao chép link và dán vào file index.html.
+Cái hay của Bootstrap 5
+là ta không cần thêm
+jquery dưới dạng một dependency nữa.
+Với các phiên bản cũ hơn phiên bản 5, ta phải sử dụng jquery.
+Do vậy, việc bỏ jquery trong Bootstrap 5
+là một thứ chúng ta đều mong đợi.
+Tiếp theo,
+nhập
+Hello. Lưu file.
+Sau đó, ta có thể chạy file index.html
+hoặc ai sử dụng VSCode
+có thể nhấn vào icon dưới cùng và tìm một bản mở rộng
+là Live Server.
+Live Server
+
+giúp chạy file trên một server phát triển.
+Nhấn chuột phải,
+chọn "Open with Live Server" (mở file bằng Live Server).
+Kết quả ta muốn thấy là từ Hello xuất hiện.
+Không có căn lề gì cả.
+Ta thấy có sự thay đổi về phông chữ nên ta biết
+là Bootstrap đang hoạt động.
+Ta sẽ bắt đầu từ trên xuống dưới.
+Chuyển tab Frontend Bootcamp lên đầu.
+
+Ta bắt đầu với navbar.
+navbar là một thành phần vô cùng quan trọng
+với bất kỳ website nào.
+Sau đó, ta sẽ tiếp tục làm các phần khác.
+Với navbar,
+ta đến dòng 17
+và bỏ từ Hello đi.
+Ta sử dụng
+thẻ nav HTML5 với lớp navbar.
+nav.navbar.navbar-expand
+
+Viết code như vậy để khiến thiết kế trở nên responsive.
+
+Ta chọn kích cỡ nào cũng được, có cỡ nhỏ, trung, lớn.
+Tôi sẽ chọn lớn, nhập -lg.
+Khi đến giới hạn
+
+kích thước màn hình lớn nhất,
+navbar sẽ mở rộng hết cỡ để hiển thị tất cả các link và các thành phần.
+
+Với các kích cỡ màn hình nhỏ hơn,
+navbar sẽ thu gọn lại thành dạng menu hamburger.
+Để tôi minh họa cho các bạn thấy.
+Khi thu nhỏ kích thước màn hình
+đến một mức độ nhất định,
+ta sẽ thấy navbar có sự thay đổi thành dạng menu hamburger.
+Nếu thiết lập kích cỡ là trung,
+tức md, các link sẽ được hiển thị cho đến khi
+kích thước màn hình
+chạm đến tầm trung như đã thiết lập thì sẽ chuyển thành dạng menu hamburger.
+Ta còn có thể thiết lập
+kích thước là nhỏ nữa.
+Nếu muốn biết chính xác
+số pixel giới hạn của từng kích cỡ,
+các bạn có thể
+tìm đến mục Layout, chọn Breakpoints. Với kích thước lớn,
+điểm giới hạn sẽ là
+trên 992 pixel. Kích thước trung là 768 pixel.
+Kích thước nhỏ là 576 pixel. Không dưới 576 pixel.
+Ở đây, ta lựa chọn kích thước lớn.
+
+Về màu sắc của navbar,
+ta nhập bg.dark.
+Ta sử dụng lớp bg
+và độ tương phản sáng (light) - tối (dark).
+Tương phản sáng sẽ có màu nền là màu xám nhạt.
+Ta có các lựa chọn màu nguyên thủy (xanh),
+màu thứ cấp (xám), v.v.
+Ta có thể thấy những màu đó bằng cách
+tìm đến mục Customize và chọn Color.
+Ta có thể sử dụng tất cả các màu ở đây,
+gồm Primary (xanh), Secondary (xám), Success (xanh lục), Danger (Đỏ), v.v.
+Đây là các màu mặc định.
+Như đã nói,
+ta có thể sử dụng file Sass
+khi muốn dùng màu khác.
+Ở đây tôi sẽ sử dụng Dark (đen).
+Nhập navbar-dark để
+thiết lập màu cho văn bản là trắng
+vì bản thân navbar đã có màu đen rồi.
+Tạm thời để thế đã.
+Lưu lại. Mở trang Frontend Bootcamp lên,
+ta sẽ thấy một đường màu đen nằm trên cùng.
+Chưa có gì trong navbar cả.
+Quay trở lại index.html
+để thêm logo thương hiệu.
+
+Thêm thẻ a.
+Sử dụng lớp navbar-brand.
+Thêm ký tự #.
+Nhập Frontend Bootcamp.
+Lưu lại. Quay lại trang, ta thấy
+logo thương hiệu.
+Dòng chữ có vẻ dí sát vào bên trái.
+Ta có thể thêm padding
+
+nhưng tôi không muốn tạo khoảng cách
+giữa dòng chữ với lề quá lớn
+khi co kéo màn hình.
+Ta sẽ thêm một container.
+Container có tác dụng
+bao chứa logo Frontend Bootcamp
+
+trong một khoảng không gian nhất định.
+Ta thêm lớp container.
+Sau đó,
+chuyển thẻ a
+vào bên trong container đó.
+Giờ giữa logo Frontend Bootcamp và lề trang đã xuất hiện một khoảng không.
+Logo đó được bao hàm
+
+bên trong container.
+
+Vậy là xong phần thương hiệu.
+Tiếp theo, ta chuyển qua phần menu.
+Luôn nhớ để mọi thứ
+nằm bên trong container.
+Mọi thứ đều phải nằm gọn trong
+container navbar.
+Ta sử dụng thẻ div có lớp collapse.
+Tiếp theo, nhập
+navbar-collapse
+
+để hiện tất cả các mục trên các màn hình nhỏ,
+kiểu thế này này.
+Còn đối với các màn hình lớn hơn
+thì
+toàn bộ các mục sẽ được hiển thị sẵn.
+Trong thẻ div, ta thêm ul.
+Ở đây, ta cần lớp navbar-nav.
+để có được
+thanh điều hướng navbar.
+Tiếp tục, bên trong ul, ta sẽ thêm danh sách các mục.
+Mỗi mục đều phải sử dụng lớp
+nav-item. Mỗi link trong mục
+cần phải có lớp
+nav-link.
+Sau đó, nhập
+#learn.
+Tiếp theo, nhập
+What You'll Learn.
+Tiếp tục. Copy phần code vừa nhập
+để tạo thêm
+3 mục nữa.
+Mục thứ 2 sẽ là
+#questions
+Sau đó,
+bỏ phần "What You'll Learn"
+và thay bằng Questions.
+Mục cuối cùng là #instructors
+Bỏ phần "What You'll Learn"
+và thay bằng
+Instructors
+Lưu lại
+và xem kết quả chạy file.
+Đây là layout mặc định.
+Các mục này sẽ nằm ngay cạnh thương hiệu Frontend Bootcamp.
+Tiếp theo, tôi muốn
+chuyển vị trí menu
+sang phía bên phải.
+Trong ul,
+thêm lớp ms, tức là margin start. Nhập ms-auto
+để đẩy menu về phía bên phải.
+Nếu thu nhỏ màn hình,
+ta sẽ thấy menu biến mất.
+Đó là do tác động của dòng navbar-expand-lg.
+
+Ta có thể đổi lg thành sm
+thì menu sẽ không biến mất
+trừ khi ta co kéo màn hình đạt giới hạn sm.
+Hiện tại, tôi vẫn sẽ để là lg.
+Tiếp đến, tôi muốn tạo một nút.
+
+Để tôi thu nhỏ màn hình lại.
+Ở đây, tôi muốn có
+một nút menu hamburger.
+Để làm vậy, ta viết code giữa
+dòng navbar-brand
+và dòng navbar-collapse.
+Ta sẽ thêm một nút.
+Ở đây, ta sử dụng lớp
+navbar-toggler.
+Nhập type="button".
+Sau đó, ta cần thêm
+
+một số thuộc tính.
+Nhập data-bs-toggle.
+Tiếp tục,
+nhập như sau.
+="collapse".
+Ta cần chỉ định mục cần chuyển đổi qua lại.
+Nhập như sau.
+data-bs-target.
+Ta sẽ thiết lập id
+bằng cách nhập
+#navbar.
+Sau đó, ta đặt id
+vào trong thẻ div có lớp collapse.
+Nhập id="navmenu". Ta sẽ đổi thành
+
+#navmenu
+ở dòng trên.
+Rồi, sau đó ta cần
+thêm gì đó trong thẻ button
+vì hiện tại nút chưa có gì cả.
+Ta có thể thêm một icon hamburger
+bằng thẻ span.
+Sau đó, ta tiếp tục nhập
+navbar-toggler-icon.
+Lưu lại. Chạy file.
+Ta sẽ thấy menu ở dạng hamburger.
+Nhấn vào icon hamburger,
+ta sẽ thấy có sự thay đổi do thẻ div có lớp navbar-collapse
+
+có chứa
+id navmenu.
+Điều hướng đã trở nên responsive hơn
+mà ta chẳng tốn mấy công sức cả.
+
+Ta chỉ cần gán vài lớp
+và
+vài thuộc tính HTML.
+Chẳng cần phải viết CSS, JavaScript
+hay gì cả.
+Vậy là xong phần navbar.
+
+Khá đơn giản. Chuyển sang phần tiếp theo
+
+là không gian showcase, chính là phần có hình ảnh người lập trình máy tính.
+Ta sẽ sử dụng
+flexbox.
+Ta sẽ tìm một số lớp
+Padding và Text.
+Tôi sẽ thực hiện comment
+
+để phân định rạch ròi giữa các phần trong thiết kế.
+Giờ ta đã có navbar.
+Ở phía dưới, ta sẽ
+thực hiện tạo dựng showcase.
+Đầu tiên, tôi sẽ nhập section
+
+để chia trang thành
+các phần khác nhau.
+Ta sẽ sử dụng một vài lớp.
+Lớp đầu tiên sẽ là bg-dark
+để có được
+nền tối.
+Lớp tiếp theo tôi sử dụng là text-light
+để làm cho văn bản có màu trắng.
+Tiếp theo là padding.
+
+Với padding và margin,
+ta có các lớp chuyên biệt như
+
+pt-x (trong đó x từ 1 đến 5). pt là padding top.
+Các số từ 1 đến 5.
+đại diện cho một số lượng pixel nào đó
+Số x càng to
+thì giá trị padding càng lớn.
+pt-5 có giá trị lớn nhất.
+Có padding top thì chắc chắn sẽ có
+padding bottom, tức pb.
+Ta còn có cả px,
+tức padding theo trục hoành,
+hướng phải-trái.
+Đã có px thì đương nhiên có py,
+là padding theo trục tung, hướng trên-dưới.
+Nếu muốn padding toàn bộ các hướng
+thì chỉ cần nhập p-x (trong đó x từ 1 đến 5)
+Tôi sẽ sử dụng p-5.
+Phần văn bản cũng phải nằm ở chính giữa.
+Do đó, ta nhập
+text-center.
+Thôi được rồi.
+Tạm thời cứ thế đã.
+Trong thẻ section, ta sử dụng container.
+Nhìn vào thành phẩm cuối cùng cần đạt được,
+
+ta sẽ thấy có một khoảng trống giữa phần văn bản và lề trang.
+Phần văn bản không thể
+dí sát vào lề trang được.
+Do vậy nên ta cần sử dụng một container.
+Hầu hết mọi thứ đều phải ở trong container,
+trừ phần section ra
+vì đó chính là phần nền tối,
+cần phải trải rộng toàn bộ trang web.
+Thêm container nào.
+Bên trong container,
+ta sẽ sử dụng flexbox.
+À từ từ chưa sử dụng flexbox vội. Lưu lại đã. Chạy file.
+Ta sẽ thấy
+nền tối.
+Ở bên trong container,
+ta sẽ tạo 2 mục flex.
+Thêm một thẻ div nữa.
+Tôi đang cố tìm cách
+để hướng dẫn sao cho các bạn cảm thấy dễ hiểu nhất.
+Đây sẽ là flexbox. Ta sẽ tạo 2 mục,
+
+gồm một thẻ div chứa phần văn bản
+và một hình ảnh. Tổng là 2 mục flex trong flexbox.
+
+Ta sẽ thêm thẻ div.
+
+Bên dưới, nhập img.
+
+Ta sẽ thêm những thứ mình cần đối với hình ảnh.
+
+Nhập src="img/showcase.svg".
+
+Với thẻ div,
+
+ta sử dụng thẻ h1.
+Nhập Become a Web Developer.
+Thử xem thiết kế của ta thế nào rồi.
+Giờ mới chỉ có tiêu đề h1
+với hình ảnh được thêm vào mà thôi.
+
+Tôi muốn dòng chữ và hình ảnh phải được nằm cạnh nhau
+
+trên cùng một hàng.
+Tại thẻ div có chứa
+cả dòng văn bản lẫn hình ảnh,
+ta sẽ sử dụng
+flexbox bằng cách nhập
+class="d-flex".
+Lưu lại, ta được kết quả là
+dòng chữ và hình ảnh
+đã được đặt cạnh nhau.
+Với hình ảnh thì
+nếu không có Bootstrap
+hay bất kỳ thể loại CSS nào
+thì hình ảnh
+sẽ lọt ra ngoài container đang chứa nó.
+Do vậy, tôi sẽ thêm lớp trong thẻ img.
+Tôi muốn hình ảnh
+nằm gọn trong container.
+Ta sử dụng một lớp có tên img-fluid.
+Hình ảnh đã nằm trong container rồi
+nhưng tôi vẫn muốn nó nhỏ hơn.
+Ta sẽ sử dụng các lớp Size,
+gồm w - width và h - height.
+Nhập w-50
+để thu nhỏ kích thước hình ảnh 50$ so với ban đầu.
+
+Trông ổn hơn rồi đấy.
+Tôi không muốn kích hoạt flexbox
+trên các màn hình nhỏ
+
+như màn hình điện thoại di động chẳng hạn.
+Vậy,
+ngoài d-flex,
+tức là
+sử dụng flex với mọi kích thước,
+ta có thể sử dụng
+các lớp giới hạn kích thước,
+kiểu như sm, lg hay md.
+Tôi sẽ sử dụng d-sm-flex.
+Lưu lại.
+Kết quả là thiết kế sẽ không có dạng flex
+trừ khi chạm đến điểm giới hạn sm.
+
+Như vậy, với màn hình điện thoại di động,
+dòng chữ và hình ảnh sẽ
+hiện từ trên xuống dưới chứ không cùng nằm trên một dòng.
+
+Nhưng một khi đã chạm đến điểm giới hạn sm
+thì 2 thứ này sẽ nằm trên cùng một hàng.
+Ta đi đến các phần việc tiếp theo.
+Có lẽ ta nên
+thêm toàn bộ phần văn bản còn lại.
+Một cái nữa đó là tôi muốn
+
+2 chữ Web Developer
+có một màu sắc riêng biệt.
+Sử dụng lớp text-color.
+Thêm một thẻ span.
+Nhập như sau.
+span.text-warning.
+
+warning, tức cảnh báo, có màu mặc định là màu vàng.
+
+Sau đó, đặt 2 chữ
+Web Developer vào bên trong thẻ span.
+
+Nhìn vào trang kết quả,
+ta thấy Web Developer đã có màu khác.
+
+Phía dưới h1, ta sử dụng thẻ p để thêm đoạn văn bản.
+
+Copy paste phần văn bản đó vào thôi.
+
+Tôi không muốn tốn công gõ từng chữ một.
+Các bạn thích viết cái gì vào đây cũng được.
+
+Lưu lại, ta được kết quả như trên màn hình.
+Ta muốn kích thước đoạn văn bản lớn hơn.
+
+Sử dụng lớp lead. Nhập class="lead".
+
+Lưu lại. Giờ phần văn bản
+đã to hơn một chút.
+Sau đó, tôi sẽ thêm một nút phía dưới phần văn bản.
+
+Ta sẽ tạo một nút
+phía dưới thẻ p.
+Nhập button,
+Nút này sẽ mở ra modal
+nhưng tôi sẽ chưa làm cho nó có tính năng đó vội.
+Hiện giờ cứ tạo cái nút thôi đã.
+Nhập như sau.
+button.btn.btn-primary để nút có màu xanh.
+Sau đó, nhập
+btn-lg
+để phóng to nút
+hơn kích thước mặc định.
+Rồi. Ta sẽ thiết lập thuộc tính modal sau.
+Giờ cứ nhập nội dung cho nút đã.
+
+Nhập Start the enrollment. Rồi. Lưu lại.
+Trên trang đã xuất hiện một nút.
+Tôi muốn xung quanh phần văn bản
+phải có không gian.
+Ta có thể sử dụng lớp margin.
+Nhập my-4.
+y ở đây chính là trục tung,
+
+theo hướng trên-dưới.
+Lưu lại. Ta đã thấy đoạn văn bản đã có khoảng cách hơn với các thành phần xung quanh nó.
+
+Tôi muốn phần văn bản phải nằm chính giữa
+trên các màn hình nhỏ.
+Còn đối với các màn hình lớn hơn,
+tôi muốn phần văn bản đó
+phải nằm ở phía bên tay trái.
+
+Ở đây, tôi đã nhập text-center,
+mặc định sẽ căn chỉnh sao cho văn bản nằm chính giữa.
+Tôi sẽ thêm
+text-sm-start
+dành cho các màn hình nhỏ. Với các màn hình to
+thì văn bản đó sẽ nằm bên trái.
+Ta cũng có thể nhập text-start
+nhưng thêm sm thì có nghĩa là
+bắt đầu từ giới hạn nhỏ
+rồi sau đó căn chỉnh lại với những màn hình lớn hơn.
+Trên các màn hình nhỏ,
+ta được kết quả là dòng chữ
+được căn chỉnh nằm ở chính giữa màn hình. Với những màn hình to hơn,
+phần văn bản đó sẽ nằm về phía tay trái.
+Như vậy, phần văn bản sẽ nằm về phía tay trái,
+còn hình ảnh
+nằm phía tay phải.
+Trên màn hình kích thước nhỏ,
+tôi không muốn hiển thị hình ảnh.
+
+Do vậy, ta đi xuống thẻ img
+
+và nhập thêm như sau.
+
+d-none,
+tức là thiết lập
+không hiển thị hình ảnh
+với mọi thể loại màn hình.
+Nhưng tôi chỉ muốn hình ảnh biến mất
+đối với màn hình nhỏ thôi. Màn hình lớn
+trên giới hạn nhỏ vẫn phải có hình ảnh.
+Để làm vậy, ta nhập
+d-sm-block.
+Vậy là xong.
+Khi phóng to màn hình,
+hình ảnh sẽ hiện lên.
+Thiết kế lại
+trở nên responsive hơn.
+Ta muốn phần văn bản từ Become a Web Developer đến phần nút được căn ở chính giữa so với hình ảnh.
+Kéo lên trên.
+Với CSS,
+ta có thể thực hiện
+căn chỉnh các mục và căn chính giữa
+theo chiều ngang
+và cả chiều dọc.
+Ở phần flexbox này,
+ta nhập như sau.
+align-items-center.
+Ta còn muốn căn chính giữa
+nội dung văn bản.
+
+Tôi muốn phần văn bản được đặt nằm giữa,
+nhập justify-content-between.
+Lưu lại.
+Xem kết quả. Thực ra ngay từ ban đầu cũng chẳng có khoảng không nào
+giữa hình ảnh và đoạn văn bản.
+Nhưng nếu có thì ta sẽ thấy rõ sự căn chỉnh vào vị trí chính giữa hơn.
+align-item đã khiến cho
+phần văn bản nằm ở chính giữa như thế.
+Trông khá ổn.
+Chắc vậy là đủ
+cho phần showcase.
+Xem nào.
+À, tôi đã thêm padding
+cho phần navbar ở đây.
+Thực ra cũng không nhất thiết phải làm vậy.
+
+Nhưng chắc thêm vào một ít khoảng không cũng chẳng chết ai.
+Quay trở phần navbar.
+Tại đây, ta thêm
+lớp py để thêm padding
+theo hướng trục tung (trên-dưới).
+Nhập py-3 để thêm ít padding.
+Các bạn có thể tùy ý lựa chọn giá trị padding
+
+cho hợp ý mình.
+Vậy là xong phần showcase.
+Tiếp theo là phần newsletter.
+Tôi nghĩ là chỉ sử dụng
+
+thẻ h3 hoặc h2 thôi.
+Sau đó, ta cần tạo
+biểu mẫu input như thế này. Biểu mẫu
+có tích hợp
+một nút. Như vậy, ta có một nhóm input.
+
+Di chuyển xuống phía dưới phần code dành cho showcase.
+Đánh dấu phần Newsletter.
+Tiếp tục nhập section.
+Tôi muốn màu nền là màu xanh.
+Nhập bg-primary.text-light.
+Nhập text-light
+vì văn bản mặc định có màu đen.
+Nhập p-5.
+Để tôi thử xem padding
+của phần showcase.
+
+Tôi nghĩ padding cho phần showcase ổn rồi.
+Tiếp theo, ta cần sử dụng container
+để bao chứa
+tất cả các thứ
+nằm trong màu nền xanh lam.
+Ta cũng sẽ sử dụng flexbox.
+Tôi sẽ chỉ cách
+thiết lập
+hệ thống grid với các cột.
+Nhưng ở đây tôi cũng muốn sử dụng flexbox.
+Dùng cái nào cũng được nhưng tôi sẽ
+hướng dẫn bạn sử dụng cả grid cả flexbox.
+Ở đây, ta sẽ có 2 mục
+nằm liền nhau.
+
+Ta sẽ tạo một thẻ div.
+Trong thẻ div, thêm lớp
+d-md-flex.
+Tôi muốn flexbox
+chỉ được kích hoạt khi đạt đến điểm giới hạn trung.
+
+Tiếp tục, nhập
+justify-content-between.
+Nhập align-items-center.
+Vậy là xong flexbox.
+Tiếp tục.
+Bên dưới, đầu tiên,
+ta sử dụng thẻ h3.
+sử dụng lớp mb-3,
+tức margin bottom 3.
+Tuy nhiên, đối với các màn hình kích thước trung bình,
+tôi không muốn có margin bottom.
+Do vậy, ta nhập thêm
+mb-md-0.
+Tiếp tục nhập
+Sign Up For Our Newsletter.
+Lưu lại.
+Ta được kết quả như trên màn hình.
+Sao lại cách xa cả dặm thế nhỉ?
+Sai chính tả chữ container.
+
+Rồi. Ổn rồi.
+Trên các màn hình lớn, tôi muốn
+cái laptop với cái cốc trong hình ảnh trông giống như
+đang nằm trên cái "bàn màu xanh" có chứa phần Newsletter.
+Tức là tôi muốn bỏ đi phần không gian giữa các laptop với phần Newsletter.
+Lý do lại có khoảng không gian này là vì
+ta đã sử dụng padding p5
+
+xung quanh hình ảnh.
+Để khắc phục điều này,
+ta quay trở lên phần showcase.
+
+Ngay sau p5, nhập p-lg-0,
+bỏ phần padding trên màn hình lớn.
+Lưu lại, ta được kết quả như kỳ vọng.
+
+Không còn khoảng không giữa laptop của cô gái
+phần Newsletter.
+Phần đầu của cô gái có vẻ sát thanh điều hướng quá nhỉ.
+
+Nhập pt-lg-5, tức padding top trên màn hình lớn.
+Để giá trị padding là 5
+để tạo khoảng cách giữa đầu của cô gái với thanh điều hướng.
+Chỉnh về kích thước màn hình điện thoại di động xem nào.
+Chỉ có ở màn hình lớn
+thì cái laptop với cái cốc mới nằm ngay trên phần Newsletter thôi
+vì ta còn phải để tâm đến phần văn bản
+phía bên tay trái nữa.
+Các bạn có thể thử điều chỉnh kích thước nếu muốn.
+
+Tiếp tục với phần Newsletter.
+
+Sau thẻ h3, ta cần sử dụng
+cái gọi là nhóm input,
+tức là gồm input với
+một nút được tích hợp vào input đó.
+Tại phần tài liệu Bootstrap,
+đến mục Forms,
+chọn Input Group. Ở đây, ta thấy cả đống các ví dụ.
+
+Tôi muốn sử dụng kiểu nhóm input
+Button addons.
+Ở đây ta có input và cả nút nữa,
+chính là thẻ div thứ 2.
+Copy sao y bản chính nào.
+Dán vào file index.html của ta.
+Vậy là ta đã có lớp input-group.
+Bỏ phần mb-3 đi vì không cần thiết.
+
+Lưu lại.
+Ta được kết quả như trên màn hình.
+Trông chán đời không? Ta cần chỉnh sửa một số thứ.
+
+Đầu tiên là thay đổi màu nút.
+Thay vì btn-outline-secondary,
+
+tôi sẽ nhập bg-dark.
+Vậy là đã thay đổi xong màu nút.
+Tiếp theo, nhập btn-lg để phóng to nút
+và đồng thời cũng phóng to phần input
+do chúng thuộc cùng một nhóm.
+Tiếp tục, ta thực hiện các thay đổi khác.
+Ở phần placeholder, đổi thành
+Enter Email.
+Do tôi copy y nguyên từ tài liệu rồi bê vào phần code của mình
+nên lớp này sẽ bao gồm cả
+2 thuộc tính là aria-label
+và aria-describedby. Ta nên sử dụng 2 thuộc tính này
+
+vì chúng có thể giúp website của mình trở nên
+thân thiện với người dùng khiếm thính hoặc
+gặp vấn đề về thính, thị giác.
+Nhưng tôi sẽ không nói đến 2 thuộc tính đó
+trong video này. Có thể tôi sẽ làm một video khác
+về tính tiếp cận. Còn ở thời điểm hiện tại,
+ta cứ bỏ 2 thuộc tính này đi đã.
+Tiếp tục, xuống phía dưới,
+ta có thể bỏ
+phần id.
+Trông cũng tạm ổn, chỉ có điều hơi rộng quá.
+Hiện tại cũng chưa có một lớp nào
+có thể
+thu hẹp chiều rộng
+của nhóm input lại.
+Do đó, ở đây, ta sẽ thực hiện
+tùy chỉnh phong cách thiết kế.
+Tôi sẽ thêm vào nhóm input như sau.
+Nhập news-input.
+Tiếp theo, chuyển qua
+sheet #style.css
+Tôi muốn rằng đối với các màn hình
+trung bình trở lên
+thì nhóm input sẽ giảm nửa kích thước.
+Nếu không thì thiết kế trông sẽ không được đẹp mắt lắm.
+Với các màn hình kích thước dưới trung bình
+thì trông phần Newsletter lại khá ổn.
+Không cần điều chỉnh gì cả.
+Đối với màn hình kích thước từ trung bình trở lên, ta cần sử dụng media query
+trong CSS vì ta chỉ muốn nhóm input giảm nửa kích thước
+đối với kích thước màn hình như trên.
+Nhập @media(min-width: 768px).
+Nhớ rằng điểm giới hạn trung là 768 pixel.
+
+Tức là,
+cứ vượt quá 768 pixel
+thì lớp news-input
+do ta tùy chỉnh
+sẽ được thiết lập chiều rộng là
+50%.
+Lưu lại,
+ta được kết quả nhóm input
+chỉ chiếm nửa không gian nên trông đẹp mắt hơn rất nhiều,
+đối với các màn hình lớn. Còn với màn hình nhỏ
+
+thì ta để chiều rộng là 100% cũng được,
+không sao cả.
+Vậy là xong phần Newsletter.
+Tiếp tục chuyển sang phần
+3 ô ở đây.
+Ta sẽ học về
+Bootstrap grid để phục vụ cho việc xây dựng 3 ô này.
+Ta sẽ
+sử dụng
+CSS grid.
+Để tôi comment đánh dấu phần các ô.
+Nhập Boxes.
+Tiếp theo,
+nhập section.
+Nhập p-5 để
+bao toàn bộ phần xung quanh.
+Nhập container. Viết đúng chính tả.
+Tiếp tục,
+để sử dụng grid, ta chỉ cần sử dụng
+lớp row.
+row sẽ bao quanh các cột.
+Ta sẽ tạo 3 cột bằng nhau.
+
+Khá dễ vì ta có thể sử dụng
+lớp col.
+Copy-paste thành 3 cột.
+3 cột này phải bằng nhau.
+
+Lưu lại. Giờ ta có 3 cột bằng nhau.
+Trông có vẻ sai sai
+vì các cột này được căn chỉnh
+về start. Ta có thể nhập
+text-center. Giờ thì các cột này
+đã nằm chính giữa.
+Rồi.
+À còn một điều nữa.
+Nếu chỉ sử dụng col thì
+ta sẽ có 3 cột bằng nhau kể cả
+trên các màn hình cực nhỏ. Mà ta đâu có muốn vậy.
+
+Trên các màn hình điện thoại di động,
+ta không muốn chúng ở dạng cột.
+
+Ta có thể điều chỉnh như sau.
+Nhập col-md
+để thêm cột đối với
+các màn hình có kích thước trung bình trở lên.
+Lưu lại. Giờ ta thấy 3 ô này đã xếp từ trên xuống dưới
+ở màn hình nhỏ.
+Kéo giãn màn hình quá điểm giới hạn trung, ta lại thấy 3 cột.
+Vậy là ta đã sử dụng col-md.
+Bên trong mỗi cột, ta muốn thêm các thẻ.
+
+Đi đến mục Components trong tài liệu Bootstrap, chọn Card,
+ta có thể thấy vô số các ví dụ
+gồm có hình ảnh,
+hoặc nút, rất đơn giản,
+hoặc thẻ có tiêu đề.
+Có hàng đống các ví dụ ở đây. Ta sẽ tự viết code
+
+vì cũng không quá lằng nhằng.
+Ở cột đầu tiên,
+ta sử dụng lớp card.
+
+Đối với nền,
+nhập bg-dark.
+Muốn màu gì
+thì chọn màu đó.
+Tiếp tục, nhập text-light.
+
+Tôi muốn sử dụng một icon.
+Tắt sidebar.
+Để thêm icon, ta có thể sử dụng
+font awesome cũng được. Nhưng hiện tại,
+
+Bootstrap đã có hệ thống icon riêng
+hình như từ thời Bootstrap 3 luôn rồi thì phải.
+Bootstrap đã từng có icon, sau đó lại bỏ icon một thời gian
+rồi bây giờ lại sử dụng lại.
+Ta sẽ sử dụng icon do Bootstrap cung cấp.
+Để tôi xem nào.
+Đi đến trang cdnjs.
+Tôi muốn lấy icon do Bootstrap cung cấp.
+Chẳng biết đống icon đó có ở đây không nữa.
+Không có rồi. Thôi để tìm
+icon Bootstrap trên mạng vậy.
+Nhập Bootstrap icons.
+Ta vào trang icons.getbootstrap.
+Ở đây có các ví dụ.
+Ta có thể cài đặt icon bằng npm nhưng tôi không muốn làm thế
+trong video này.
+Tôi biết là có CDN. Tôi đã từng dùng rồi.
+Để xem nào.
+Thôi để tìm kiếm bootstrap icons cdn xem nào.
+
+
+Trang blog này có đây rồi.
+Để xem là thêm link nào đây.
+Hmm...
+Rồi. Ta sẽ sử dụng link phía trên
+
+để sử dụng icon Bootstrap.
+Copy và dán link này
+vào trong file index.html.
+Chắc là dùng được rồi.
+Quay xuống phía dưới.
+Phía bên trong thẻ.
+
+Đây là nơi tôi muốn sử dụng icon.
+Thêm vào thẻ i
+cùng một lớp.
+Tương tự như font awesome
+
+chỉ khác ở chỗ thay vì nhập fs, ta nhập bi, tức Bootstrap icon.
+Sau đó thêm bất kỳ icon nào mình muốn.
+Nhập bi-laptop
+để sử dụng icon laptop.
+
+Để xem có hoạt động không nào. OK rồi.
+Icon này hơi bé. Tôi muốn nó
+to hơn chút nữa.
+Để làm vậy, ta sử dụng
+một thẻ div
+để bao quanh icon. Tôi muốn icon có kích thước tương đương h1.
+
+Trong Bootstrap, nếu không muốn sử dụng
+thẻ h1, h2, h3 thật thì
+ta có thể sử dụng những thẻ đó dưới dạng lớp.
+Ta có thể sử dụng một thẻ div có lớp là h1.
+Sau đó chuyển dòng bi bi-laptop vào bên trong thẻ div có lớp h1.
+Lưu lại.
+Icon laptop trông to hơn và có kích thước tương đương với h1.
+
+Tôi còn muốn thêm margin bottom cho icon đó.
+
+Vậy ta nhập mb-3.
+Bên dưới div bao quanh icon,
+ta nhập h3
+với lớp card-title.
+Nhập Virtual.
+Xong thẻ h3.
+Ta cũng thêm margin bottom cho thẻ h3.
+Nhập mb-3.
+Bên dưới h3 sẽ là một đoạn văn bản
+có lớp card-text.
+Có rất nhiều lớp như card-body,
+card-title,
+card-text. Thậm chí còn có cả card-image
+dành cho hình ảnh.
+Sau đó, ta thêm một đoạn văn bản.
+
+Lorem15 hay 10 gì đó. Mà sao chẳng được, chỉ là một đoạn văn tùy chọn thôi mà.
+
+Thử xem nào.
+À đoạn văn bản mẫu dài hơn đấy.
+Chắc là 15 rồi.
+Nói chung 10 hay 15 cũng chẳng quan trọng lắm đâu. Chẳng qua tôi chỉ muốn
+thiết kế sao cho giống y bản mẫu thôi.
+Tiếp theo là một đường link
+
+bên dưới đoạn văn.
+Link là "Read More", có định dạng là một nút.
+Ta có thể sử dụng các lớp button
+đối với các đường link.
+Nhập btn btn-dark. Nhập href="#" để đường link không dẫn đến đâu.
+
+Tiếp tục nhập Read More.
+Để tôi kiểm tra thiết kế mẫu. Ồ, tôi đã sử dụng màu nguyên thủy.
+Tôi sẽ sửa lại thành màu nguyên thủy (xanh lam).
+Các bạn thích dùng màu gì cũng được.
+Chẳng qua tôi thấy màu đấy phù hợp với thiết kế này thôi.
+
+Ta cần thêm 2 ô nữa.
+
+Tôi đã copy và paste sẵn
+
+2 mục col md rồi
+nên chỉ việc
+sao chép phần card và dán vào từng cột một thôi.
+Đến với cột thứ 2.
+Dán phần code vừa sao chép
+và thay đổi một chút.
+Thay Virtual thành Hybrid.
+Đổi laptop
+
+thành person-square.
+Thay đổi cả màu nữa.
+Ta nhập bg-secondary,
+mặc định là
+màu xám đậm.
+Nhìn xuống phần link,
+nhập btn-dark. Thử chạy xem nào.
+
+OK rồi. Cột cuối cùng.
+
+Ta sẽ trang trí giống cột đầu tiên.
+Phần được sao chép lúc nãy vẫn còn nằm trong clipboard.
+Kéo xuống cột thứ 3
+rồi dán phần được sao chép vào.
+Đổi Virtual thành
+
+In Person. Đổi icon thành
+bi-people.
+Xong. Có vẻ ổn đấy.
+Tiếp theo là
+2 phần
+Learn The Fundamentals và Learn React.
+2 phần này đều có hình ảnh.
+Ta sẽ sử dụng grid.
+Ở đây ta chỉ tạo 2 cột.
+Các bạn có thể sử dụng flexbox
+cũng được.
+Trong phần code, ta comment đánh dấu phần mới.
+Tôi nhập Learn Sections.
+Nhập section. Sử dụng lớp p-5.
+Sau đó,
+ta sử dụng màu nền trắng.
+Tôi nghĩ thế là ổn.
+Thêm vào đó,
+ta cũng cần sử dụng id
+vì ta muốn thanh điều hướng đưa mình
+xuống đây.
+Thanh điều hướng
+trỏ đến id learn. Nhập id="learn".
+Tiếp tục là container.
+Nhập row.
+Đối với căn chỉnh, tôi nhập
+align-items-center
+để căn chính giữa theo chiều dọc
+đối với
+phần văn bản và một số phần tử khác.
+
+Tiếp theo, nhập justify-content-between.
+U là trời. Hôm nay tôi cứ sai chính tả hoài.
+Rồi. Lưu lại.
+Giờ vẫn chưa thấy gì hết.
+À. Còn một điều nữa tôi muốn cho các bạn thấy
+đối với các cột trong màn hình nhỏ.
+Các cột trong màn hình nhỏ sẽ trở thành các ô nằm theo chiều dọc.
+Nếu muốn tạo khoảng cách giữa các ô đó,
+ta có thể cuộn lên trên trong phần code,
+tại dòng 91
+có lớp row text-center
+và thêm vào
+g-4.
+
+Vậy là các ô đã cách nhau một khoảng.
+Ta cũng có thể sử dụng gy để tạo khoảng cách trên-dưới
+hoặc gx để tạo khoảng cách trái-phải.
+Còn tôi thì nhập g-4
+để ngăn cách giữa các ô.
+Nói chung là tôi cảm thấy
+Bootstrap 5 đang ngày càng
+có nhiều
+các lớp tiện ích cấp thấp hơn.
+
+Thêm vào đó, ta còn có cả
+các card và alert.
+
+Tôi rất thích Bootstrap 5.
+Tôi cũng thích cả tập hợp các lớp tiện ích cấp thấp mà nó mang đến nữa.
+Nhưng thật ra cũng không nhất thiết
+phải có quá nhiều lớp như thế.
+Thậm chí Bootstrap 5 còn có cả các style có sẵn.
+
+Tôi thấy nhược điểm khi Bootstrap cung cấp quá đầy đủ các lớp, các style, các tiện ích
+thì dù ta có tạo ra bao nhiêu thiết kế đi nữa thì cũng đều như thể cùng từ một lò Bootstrap mà ra vậy,
+nhất là nếu không thay đổi các màu chính đi chẳng hạn.
+
+Rồi.
+Tôi nghĩ là ổn rồi đó.
+Ta đi tiếp.
+Ở đây ta có phần Learn Sections.
+Ta tiếp tục viết code
+bên trong thẻ div có lớp row.
+Ta cần tạo 2 cột.
+Cột đầu tiên,
+nhập col-md.
+Cột này sẽ chứa một hình ảnh.
+Thêm thẻ img.
+Nhập src="image/fundamentals.svg".
+Tiếp theo, nhập
+class="img-fluid"
+để hình ảnh nằm gọn trong container.
+Phía dưới thẻ div,
+ta lại tạo một cột nữa.
+Nhập col-md.
+Tôi sẽ thêm padding.
+Nhập p-5.
+Sau đó đến phần nội dung. Dùng thẻ h2.
+Nhập dòng chữ
+Learn The Fundamentals.
+Phía dưới thẻ h2,
+ta sẽ thêm một đoạn văn. Sử dụng lớp lead
+để làm phần văn bản to hơn.
+Lại là Lorem15.
+Thêm một đoạn văn nữa.
+Lorem30 đi.
+Thử xem kết quả nào.
+Vậy là hình ảnh và phần văn bản đang nằm cạnh nhau.
+Ta thấy được phần văn bản nằm bên tay phải.
+Tôi muốn thêm một nút
+phía dưới phần văn bản,
+hoặc một đường link có định dạng là một nút.
+Bên dưới thẻ p,
+ta nhập như sau.
+a.btn.btn-light.mt-3.
+Sử dụng margin top để đẩy nút xuống phía dưới một chút.
+
+Đúng hơn thì là đẩy đường link xuống phía dưới một chút.
+Bên trong thẻ a, nhập Read More.
+Tôi muốn thêm một dấu bé hơn
+ngay trước cụm Read More.
+Ta sẽ nhập như sau.
+i.bi.bi-chevron-right.
+Thử chạy file xem nào. Ổn đấy.
+Dĩ nhiên là khi co màn hình lại thì mọi thứ đều sắp xếp từ trên xuống dưới chứ không dàn hàng ngang ra nữa
+vì ta đã nhập col-md chứ không phải chỉ nhập col.
+Trông ổn rồi.
+Phần tiếp theo cũng tương tự thôi.
+Tôi sẽ lại sử dụng tổ hợp thần thánh
+Ctrl C - Ctrl V. Chỉnh sửa một chút.
+
+Nhập bg-dark cho phần này.
+Các bạn có thể thấy sự tương phản, đan xen màu sắc giữa mỗi phần.
+Đó chính là cách tôi thường sử dụng để
+
+xây dựng các website như thế này.
+Sau khi đã nhập bg-dark,
+ta đi tiếp xem còn cần làm việc gì nữa.
+Ta đổi hình ảnh thành
+react.svg.
+Tôi muốn hình ảnh nằm phía bên phải.
+Do đó, tôi sẽ
+
+di chuyển toàn bộ phần div có chứa hình ảnh
+xuống phía dưới
+cột văn bản.
+Di chuyển xuống phía dưới,
+và sau đó ta đổi Learn The Fundamentals
+thành
+Learn React.
+Chắc là xong rồi. Lưu lại
+và xem kết quả.
+Quên mất là phần văn bản phải có màu trắng thì mới đọc được.
+
+Tại dòng 168, nhập text-light.
+Rồi.
+Tương tự nhau thôi mà.
+Khá dễ xơi.
+Tiếp theo, ta sẽ xây phần
+FAQ, là phần này này.
+Ta sẽ sử dụng thành phần accordion.
+Bắt tay vào việc thôi.
+Nhập Questions Accordion.
+Ủa Accordion viết như nào ta?
+À, chữ o chứ không phải chữ a.
+Rồi. Nhập section.
+Ta sẽ sử dụng lớp p-5,
+cũng như tất cả các phần khác.
+Nhưng lần này còn có thêm id
+
+dành cho menu. Tôi sẽ chỉ cho các bạn thấy ngay thôi.
+Nhập như sau.
+id="questions". Lưu lại.
+Tôi sẽ chỉ cho bạn thấy. Nếu nhấn vào
+mục What You'll Learn,
+ta sẽ thấy trình duyệt tự động kéo xuống phần Learn The Fundamentals
+
+một cách nhanh chóng và lẹ làng.
+Đó là vì ta đã sử dụng một lớp cụ thể
+trong navbar.
+Đâu rồi ý nhỉ? Phải trong ul không ta?
+Không. Đợi tôi tí.
+Ủa ta có dùng cái lớp ý không nhỉ?
+Hình như là không cần dùng lớp đó hay sao ấy.
+Tôi nhớ rằng có sử dụng một lớp scroll mà nhỉ.
+Tôi nhớ là đã thêm lớp đó vào mà.
+Có thể là không. Chắc là không cần lớp ý đâu.
+Thế mà tôi cứ tưởng là mình phải dùng đến lớp đặc biệt nào đó
+thì mới có thể tự động cuộn xuống phần cần tìm được.
+Chắc không phải vậy.
+Tự động cuộn chắc là mặc định rồi. Hay đấy chứ.
+Có một việc tôi cần làm là
+gắn thanh navbar cố định.
+Để như vậy thì dễ điều hướng hơn.
+Để làm vậy, ta chỉ việc
+thêm một lớp vào trong navbar
+là
+fixed-top.
+Kết quả là navbar sẽ được gắn cố định
+dù cho ta có cuộn trang đến đâu, có điều hướng đến đâu đi chăng nữa.
+
+Khi nhấn vào Frontend Bootcamp, ta sẽ được đưa lên đầu trang.
+Ở đây xuất hiện một vấn đề
+về khoảng cách.
+
+Một phần đỉnh đầu cô gái bị che khuất bởi navbar.
+Để khắc phục, ta vào sheet style.css.
+
+Nhập body.
+Sau đó, sử dụng trình chọn giả before.
+Tiếp theo, nhập display: block;.
+Muốn sử dụng trình chọn giả before hay after
+thì đều phải thêm nội dung.
+Hiện tại ta chưa muốn thêm nội dung gì nên cứ để trống.
+content: '';.
+Tiếp tục, thêm height.
+Thiết lập giá trị là 60 pixel.
+Như vậy, trên trang sẽ xuất hiện một phần tử "ma"
+khoảng 60 pixel để đẩy hình ảnh cô gái lập trình xuống phía dưới,
+để lộ toàn bộ phần đầu.
+Hơi cồng kềnh
+nhưng ta cùng
+quay trở lại phía dưới.
+Boxes này. Learn Sections này.
+Question Accordion đây rồi.
+Khá là lằng nhằng đấy,
+không biết tôi nên copy-paste
+
+hay tự viết code ra nhỉ.
+Mà tôi nhập tay đi, cũng không quá rách việc đâu.
+Làm xong một câu hỏi
+là ta lại có thể sử dụng kỹ năng copy-paste,
+thay đổi một xíu là ra được câu hỏi khác rồi.
+Thêm một container.
+Ta sẽ tạo một tiêu đề.
+Sử dụng thẻ h2.
+Tôi muốn căn chỉnh ở vị trí trung tâm. Nhập text-center.
+
+Nhập mb-4.
+Nội dung văn bản sẽ là
+Frequently Asked Questions.
+Lưu lại. Ta đã thấy tiêu đề Frequently Asked Questions.
+
+Phía dưới tiêu đề h2 sẽ là
+accordion.
+Ta sẽ sử dụng lớp
+accordion.
+Để tôi ngó qua tài liệu Bootstrap một chút.
+Đi đến thành phần Accordion.
+Ở đây ta có style như thế này.
+
+Có tiêu đề, có đường viền.
+Tôi muốn sử dụng phiên bản Flush.
+Trông phiên bản này
+gọn hơn một chút. Do vậy, tôi sẽ sử dụng
+accordion flush.
+Tôi sẽ lại
+sao chép và dán cho nhanh.
+Tôi sẽ copy toàn bộ,
+dán vào trong file index.html
+rồi chỉnh sửa dần vậy.
+Tôi sẽ dán phần tài liệu Flush
+ngay phía dưới tiêu đề h2.
+Trong thiết kế chắc đã xuất hiện
+một thành phần accordion rồi.
+Ổn đấy.
+Rồi. Ta sẽ thay đổi một ít nội dung.
+Trở lại
+câu hỏi đầu tiên.
+Chú ý dòng 198
+có accordion accordion-flush
+bao xung quanh tất cả các thứ liên quan.
+Đối với id,
+thay vì sử dụng id accordionFlushExample,
+tôi sẽ thực hiện
+Command D và chọn tất cả
+các accordionFlushExample
+rồi thay id đó
+bằng từ Questions cho phù hợp.
+Mọi thứ vẫn sẽ hoạt động bình thường.
+Đi đến mục thứ nhất.
+
+Tôi nghĩ là mình nên comment ở đây để đánh dấu mục đầu tiên.
+Nhập Item 1.
+Mỗi thẻ div với một mục accordion
+được tính là một mục. Như vậy, sau Item 1 sẽ là
+
+Item 2. Tôi nghĩ là có tổng cộng 3 mục.
+Item 3. Hình như có 4 mục thì phải.
+À không, chỉ có 3 thôi.
+Quay trở lại Item 1.
+Ta sẽ giữ lại accordion-item, accordion-header và button.
+
+Tôi sẽ lại bỏ
+2 thuộc tính
+aria-expanded và aria-controls đi để tránh gây khó hiểu.
+Bỏ 2 thuộc tính này đi.
+Bên dưới cũng vậy.
+Các bạn không nhất thiết phải xóa như tôi làm đâu,
+chẳng qua tôi muốn làm vậy để các bạn
+thấy dễ hiểu hơn thôi.
+Quay trở lại với Item 1.
+Ở đây ta có
+accordion-item và
+accordion-header.
+id="flush-headingOne"
+tôi nghĩ là không cần thiết lắm
+nên sẽ xóa luôn.
+Đáng ra tự viết code cũng được, đỡ phải đi tìm các thứ để xóa.
+Nhưng thôi kệ. Lỡ rồi.
+Tiếp tục, ta có
+accordion-button collapsed. Giữ lại cái này.
+Tiếp theo là target, target phải
+trùng khớp với parent.
+Như vậy là ta có một thẻ button
+và thẻ div.
+Giờ ta thay đổi để target trùng khớp với parent.
+Trên dòng 206, đổi thành
+#question-one.
+Tiếp theo,
+...
+ta cần thay đổi id.
+Đổi flush-collapseOne
+thành question-one. Chạy file chắc vẫn ổn.
+
+Rồi. Sau đó, ta chỉnh sửa dòng chữ Accordion Item #1 trên dòng 208
+thành
+Where exactly are you located?
+
+Trong phần accordion-body,
+tôi bỏ phần code mẫu
+và sau đó sử dụng
+Lorem50.
+Vậy là xong phần câu trả lời cho câu hỏi 1.
+
+Đối với câu hỏi tiếp theo,
+tôi sẽ sao chép phần code cho câu hỏi 1,
+tức Item 1.
+Ta bôi đậm những phần sau.
+Ủa đúng không nhỉ?
+Xin lỗi. Tôi chọn nhầm thẻ div
+có lớp accordion-item.
+
+Đóng sidebar.
+Sao chép phần bôi đậm,
+đi xuống phần Item 2 và
+dán đoạn code vừa sao chép.
+Item 2 đây rồi. Dán phân code vừa sao chép.
+Item 3 cũng tương tự.
+Item 3 kết thúc ở đây.
+Dán vào là xong.
+Vậy là ta đang có 3 câu hỏi giống nhau.
+Ta cần thay đổi các câu hỏi. Đi xuống Item 2, tức câu hỏi 2.
+Tìm phần target
+để thực hiện thay đổi.
+Đổi question-one thành question-two.
+
+Đổi câu hỏi thành
+How much does it cost to attend?
+Cứ để phần body, tức câu trả lời như vậy,
+không cần chỉnh sửa.
+Tiếp theo là Item 3, tức câu hỏi 3.
+What do I need to know?
+Tức là có cần phải có sẵn các công nghệ hay kỹ năng nào
+thì mới được tham gia khóa học không.
+Đổi question-one thành
+question-three.
+Vậy là giờ ta đã có
+3 câu hỏi khác nhau.
+Tôi muốn thêm một vài câu hỏi nữa.
+Trong clipboard của tôi
+vẫn còn lưu một số code nên tôi sẽ tận dụng để làm câu hỏi 4.
+Kéo xuống phía dưới Item 3.
+
+Nhập Item 4 để đánh dấu.
+
+Dán đoạn code đó vào.
+Câu hỏi 4 sẽ là How do I sign up?
+Tiếp theo,
+đổi question-one
+thành
+question-four.
+Còn một câu hỏi nữa.
+Tôi nhớ là thiết kế mẫu có tận 5 câu hỏi cơ.
+Câu cuối là Do you help me find a job.
+Bên dưới Item 4,
+ta sẽ tạo Item 5, tức câu hỏi 5.
+Do you help me find a job?
+Đổi target
+từ question-one thành question-five.
+Hiện giờ ta phải có được 5 câu hỏi rồi.
+
+Tốt rồi. Như vậy, đó là phần FAQ,
+có sử dụng thành phần accordion.
+Tiếp theo là phần giới thiệu Giảng viên hướng dẫn.
+Cách xây dựng phần này cũng tương tự như
+
+phần thẻ ta tạo phía trên.
+Kéo xuống phía dưới.
+Nhập section#instructor
+để khi nhấn vào mục Instructors tại menu thì ta sẽ được đưa đến đúng phần Instructors.
+Sử dụng lớp p-5.
+Tiếp tục, nhập
+bg-primary
+để có được màu nền là xanh lam.
+Tiếp theo, ta lại sử dụng container.
+
+Sau đó là tiêu đề.
+Nhập h2.text-center.
+Tiếp tục, nhập
+text-white.
+Văn bản cần hiển thị là Our Instructors.
+Vậy là xong phần tiêu đề.
+Dưới tiêu đề, ta tạo một đoạn văn bản.
+
+Ta sẽ nhập
+p.lead. Sử dụng lead
+để phóng to văn bản.
+Tiếp tục, nhập text-center.
+text-white.
+mb-5.
+
+Copy paste phần văn bản giới thiệu giảng viên hướng dẫn đã chuẩn bị từ trước.
+Vậy là xong phần đoạn văn bản.
+Phía bên dưới, ta sẽ sử dụng hệ thống lưới grid
+gồm các cột.
+Tạo một hàng. Nhập row.g-4
+
+để tạo khoảng cách giữa các ô.
+g ở đây là viết tắt của từ gutter.
+Tiếp theo, nhập
+col-md.
+Đối với
+màn hình kích thước trung bình,
+tôi muốn có 2 cột.
+Nhập như sau.
+col-md-6. Trông có vẻ khó hiểu
+nếu các bạn chưa quen sử dụng hệ thống grid.
+
+Có tất cả 12 hàng trong hệ thống grid,
+và ta muốn có một nửa của 12 cột
+là 6 cột nên mới nhập col-md-6 với màn hình kích thước trung bình.
+
+Đối với màn hình kích thước lớn,
+
+tôi muốn 1/3 của 12 cột
+là
+4 cột.
+Do đó, nhập col-lg-3
+để lấy được 4 cột.
+Tiếp theo,
+ta nhập
+bg-light để có màu nền là xám nhạt.
+
+Tiếp theo, nhập
+card-body.text-center.
+Bên trong phần body,
+ta sẽ để hình ảnh giảng viên hướng dẫn.
+Tiếp theo, tôi sẽ sử dụng
+một API đặc biệt
+để lấy đại hình ảnh
+của một người nào đó.
+Nhập https://randomuser.me/.
+Được rồi.
+Tiếp tục nhập
+api/portraits/.
+
+Sau đó, ta lại nhập men hoặc women để chọn giới tính giảng viên.
+Tôi sẽ nhập men,
+sau đó là thêm một con số bất kỳ. 11 đi. 11.jpg.
+Ta thêm một vài lớp.
+
+Tôi muốn hình ảnh có khung tròn,
+nhập rounded-circle mb-3.
+Xong. Lưu lại.
+
+Xem kết quả nào.
+Trên màn hình đã có ảnh một anh chàng nào đó
+nằm trong khung tròn.
+Tiếp theo,
+bên dưới hình ảnh, ta sẽ thêm tên giảng viên.
+Nhập như sau.
+card-title mb-3.
+
+Để tên giảng viên này là John Doe.
+Tiếp theo là một đoạn văn.
+Tôi sử dụng Lorem15.
+Tiếp theo là tài khoản mạng xã hội
+của từng giảng viên.
+Sử dụng thẻ a
+để tạo đường link dẫn đến tài khoản mạng xã hội của các giảng viên.
+
+Tạm thời để href="#".
+Ở đây ta sẽ để đường link dẫn đến tài khoản Twitter của các giảng viên.
+Nhập như sau.
+i.bi.bi-twitter.
+
+Tôi muốn phần văn bản có màu tối.
+Thông thường, theo mặc định,
+đường dẫn sẽ có màu xanh. Do vậy, để đổi màu,
+tôi nhập text-dark.
+Thiết lập margin theo trục tung.
+Nhập mx-1.
+Lưu lại, xem kết quả.
+Ta thấy icon Twitter hiển thị rồi.
+
+Tôi sẽ lại sao chép thẻ a
+và tạo ra 3 liên kết nữa.
+Tiếp theo là tài khoản Facebook.
+Sau đó là LinkedIn
+và cuối cùng là Instagram.
+Các icon đã xuất hiện đầy đủ trong thiết kế.
+Tôi sẽ sao chép toàn bộ đoạn code của cột thứ nhất.
+
+Bôi đậm phần code,
+sao chép
+toàn bộ phần code đó
+rồi kéo xuống phía dưới để dán phần code vừa sao chép 3 lần.
+Ta cần tạo thêm 3 giảng viên nữa để đủ 4 người.
+Lưu lại.
+Kết quả ta được cùng 1 người cho 4 ô.
+Trên màn hình kích thước lớn,
+ta có 4 ô nằm trên cùng một hàng.
+Đối với
+màn hình kích thước trung bình,
+4 ô đó lại được chia đều làm 2 hàng.
+Để tôi co kéo màn hình cho các bạn thấy.
+
+Ở màn hình kích thước nhỏ thì các ô sẽ được xếp lần lượt từ trên xuống dưới.
+Giờ ta sẽ đổi tên và hình ảnh giảng viên.
+Người đầu tiên ta vẫn để là
+John Doe.
+
+Người tiếp theo sẽ là Jane Doe.
+Tôi sẽ đổi hình ảnh giảng viên.
+
+Thay vì men,
+tôi sửa thành women.
+Với giảng viên thứ ba,
+ta sẽ đổi tên thành
+...
+Steve Smith.
+Nhập men, đổi từ số 11 thành số 12.
+Giảng viên cuối cùng,
+ta đổi thành women, chọn số 12.
+
+Đổi tên thành Sarah Smith.
+Xong. Lưu lại.
+Kết quả phải là có 4 người khác nhau thì mới đúng.
+Chuẩn bài rồi. Tiếp theo sẽ là mục
+
+Thông tin liên hệ và một bản đồ nho nhỏ.
+Ta sẽ sử dụng mapbox cho phần bản đồ.
+Cũng không bắt buộc là phải sử dụng mapbox,
+nhưng các bản phải đăng ký để nhận
+
+một khóa api. Sau đó, ta sẽ tạo chân trang
+và modal phía trên,
+khi nhấn và nút Start The Enrollment.
+Phần việc của ta chỉ còn vậy thôi.
+Xuống phần dưới cùng.
+Ta sẽ tạo phần
+Contact & Map.
+Nhập section.p-5.
+Sau đó là lớp container.
+Tiếp tục,
+nhập
+row.g-4.
+Ta muốn 2 cột, bắt đầu md,
+
+tức là màn hình cỡ trung. Nhập col-md.
+Sau đó, ta sử dụng h2.
+
+Thêm một số lớp.
+Nhập text-center.
+Đây là tiêu đề Thông tin liên hệ,
+nhập mb-4.
+Nhập Contact Info.
+Tiếp theo, ta cần thêm một nhóm danh sách.
+Phần Thông tin liên hệ ở thiết kế mẫu
+trông không lý tưởng lắm.
+Nếu muốn thì các bạn cứ việc đổi.
+Nhưng ở đây, tôi muốn có một nhóm danh sách
+vì đây là thành phần thường xuyên được sử dụng.
+Ví dụ là các sidebar
+
+trong một blog có các đường dẫn
+đến các danh mục khác nhau chẳng hạn.
+Sử dụng thẻ ul và thêm một danh sách.
+
+Ta sẽ nhập ul.list-group.
+Tiếp tục nhập
+list-group-flush.
+Để tôi phóng to phần văn bản Thông tin liên hệ
+bằng cách sử dụng lead.
+Bên trong ul sẽ là các li,
+mỗi li
+sẽ có lớp list-group-item.
+
+Tiếp theo, nhập span
+để in đậm tên nhãn.
+Ta có thể sử dụng lớp
+fw-bold. fw là font weight.
+Nhập Main Location.
+Bên ngoài span,
+tôi nhập là 50 Main st.
+Boston MA. Xem kết quả xem sao.
+Được rồi. Sau đó, tôi sẽ lại
+sử dụng tổ hợp phím thần thánh Ctrl C - Ctrl V,
+để thêm Số điện thoại và Email
+vì các mục này đều có định dạng giống nhau.
+Ta có một list-group-item khác
+là Enrollment Phone.
+Student Phone.
+Enrollment Email và Student Email.
+Lưu lại. Ta được kết quả như trên màn hình.
+Tiếp theo,
+ta chuyển qua cột thứ hai dành cho tấm bản đồ chỉ đường.
+
+Kéo xuống phía dưới. Nhập như sau.
+col-md.
+Ở đây, ta cần thêm bản đồ.
+
+Do vậy, tôi sẽ đi đến mapbox.
+Nếu làm theo cách của tôi, các bạn hãy tìm kiếm
+mapbox.com trên trình duyệt.
+Các bạn có thể đăng ký. Còn tôi nhấn Go to account vì đã đăng nhập sẵn rồi.
+
+Tiếp theo, ta cần lấy token truy cập.
+
+Các bạn có thể nhấn Create a token (tạo token).
+Đừng dùng của tôi. Đằng nào sau này tôi cũng sẽ làm mới.
+Ở phía trên,
+ta chọn Web.
+Chọn sử dụng Mapbox CDN.
+Ở đây, ta có file CSS,
+tôi sẽ copy file này trước.
+Dán vào đầu file index.html.
+
+Kéo lên phía trên.
+Dán link đó phía dưới stylesheet
+và link Bootstrap. Vậy là xong.
+Tiếp theo, ta copy thẻ script
+
+và dán xuống dưới cùng file index.html.
+so we'll put that right under the
+Ta sẽ dán dòng đó ngay dưới thẻ script Bootstrap.
+Ta sẽ sử dụng thẻ script để
+thêm một ít code JavaScript ở đây.
+
+Để tôi xem nào.
+Nhấn Next. Đây rồi.
+
+Ta sẽ sao chép toàn bộ những gì nằm trong thẻ script ở đây
+và dán vào file của mình.
+Hãy sử dụng khóa của riêng bạn.
+Nó sẽ tự động thêm khóa của bạn vào đây.
+Rồi. Để xem nào.
+Ta đang tạo một mapbox mới.
+Ta có một container là map
+
+Bên trong cột chứa bản đồ thu nhỏ,
+ta sẽ thêm id map.
+Ủa sao không được ta?
+Tôi cũng chẳng biết sao.
+Thôi đành nhập đầy đủ ra vậy.
+Nhập div id="map".
+
+Vậy là được rồi,
+không cần thêm html gì nữa đâu.
+Các bạn có thể thêm các giá trị khác.
+Để tôi lưu lại rồi sau đó thực hiện căn chỉnh cho cẩn thận.
+
+Ta có thể thêm một số thứ vào instance này.
+Ở đây, tôi muốn thêm
+center: [] để tập trung vào một vùng nhất định.
+
+Ta sẽ nhập
+giá trị kinh độ - vĩ độ như sau.
+Kinh độ là
+-71.060982.
+Đây là tọa độ của Boston MA.
+Các bạn thích nhập kinh độ - vĩ độ thế nào cũng được.
+Vĩ độ là 42.35725.
+Vậy là xong.
+Sau đó thiết lập mức độ phóng to bản đồ là 18.
+zoom: 18.
+Lưu lại. Khi xem kết quả,
+ta sẽ chưa thấy gì hết.
+Đó là bởi vì thẻ div chưa có
+chiều cao và chiều rộng.
+Để thiết lập chiều cao và chiều rộng cho thẻ div,
+ta lại phải nhờ đến sheet style.css tùy chỉnh.
+Nhập id map. #map.
+Thiết lập chiều rộng width là 100%. width: 100%.
+Chiều cao cũng vậy. height: 100%.
+Đến giờ bo góc rồi.
+Nhập border-radius: 10px.
+Rồi. Chắc bản đồ đã hiển thị,
+với trung tâm chính là địa điểm
+có tọa độ
+ta đã chỉ định.
+Tiếp theo là
+phần chân trang
+và cuối cùng là modal.
+Ta thiết lập chân trang như sau.
+Comment Footer để đánh dấu.
+Ta sử dụng thẻ footer.
+Nhấp footer.p-5.
+bg-dark.
+Xem nào.
+Có một số lớp ta cần sử dụng ở đây.
+Tôi sẽ thêm
+text-white
+và text-center.
+Tiếp tục, nhập position-relative
+để sử dụng nó như một lớp.
+Lý do tôi làm vậy là
+vì tôi muốn có một nút
+quay trở lên đầu trang.
+Ta sẽ thiết lập vị trí tuyệt đối bên trong phần chân trang.
+Ta sử dụng container.
+Bên trong container, ta tạo một đoạn văn bản.
+
+Sử dụng lớp lead.
+Nhập Copyright.
+&copy.
+Nhập 2021 Frontend Bootcamp.
+Lưu lại và xem kết quả.
+Trông giống với thiết kế mẫu rồi đấy.
+Tôi muốn thêm một đường link quay trở lên đầu trang
+dưới dạng một icon.
+Bên dưới thẻ p, ta tạo thẻ a,
+sử dụng lớp position-absolute.
+
+Như vậy là nó đã có vị trí tuyệt đối
+bên trong phần chân trang.
+Tiếp theo, sử dụng lớp
+bottom-0.end-0.
+Hiện tại, các bạn chưa có nhiều kiến thức lắm
+về phần thiết lập vị trí. Các bạn có thể tham khảo tài liệu Bootstrap.
+
+Tiếp tục nhập p-5.
+href="#".
+Vậy là xong đường link quay trở lên đầu trang.
+Để thiết lập icon, ta sử dụng thẻ i
+với lớp bi.
+Tiếp theo, nhập
+bi-arrow-up-circle.
+Nhớ thêm h1
+để phóng to icon. Lưu lại.
+
+Nhấn vào icon, ta sẽ được đưa lên đầu trang.
+Vậy là ta đã có thể
+quay trở lên đầu trang
+chỉ với mũi tên trỏ lên này rồi.
+Cuối cùng là modal.
+Mọi thứ đều phải
+thuận mắt, kể cả trên màn hình điện thoại di động.
+Mọi thứ đều được hiển thị lần lượt
+theo chiều từ trên xuống dưới.
+Ổn rồi.
+Ta lại đến với phần modal.
+Quay trở lên nút Start The Enrollment
+trong phần showcase.
+
+Đây rồi. Đây là nút
+Start The Enrollment.
+Ta cần thêm một vài thuộc tính
+cho nút này.
+Trên dòng 67, sau tên lớp, nhập
+data-bs-toggle.
+
+Các bạn còn nhớ với thanh điều hướng,
+ta đã nhập
+data-bs-toggle rồi thiết lập thành collapsed chứ?
+Còn ở đây, ta thiết lập data-bs-toggle là modal.
+Tiếp đến là target.
+
+Nhập data-bs-target.
+Nhập #enroll,
+tức là id của modal.
+Để sử dụng modal,
+
+đi đến tài liệu Bootstrap.
+Chắc là sẽ phải thêm một ít code JavaScript đây.
+
+À mà hình như không cần.
+Ừ đúng rồi. Không cần đâu. Ta không cần khởi tạo gì nữa cả.
+
+Kéo xuống phía dưới.
+Có vẻ nhiều. Tôi nghĩ là
+chắc lại phải sử dụng tuyệt chiêu
+Copy-Paste thôi. Xem thử bản demo nào.
+Ta được kết quả như vầy.
+Có dạng biểu mẫu không nhỉ?
+Đây được không nhỉ? À không, đây chỉ là
+hướng dẫn sử dụng grid thôi. Vừa rồi là chuyển đổi giữa 2 modal.
+
+Tôi nhớ là có một ví dụ về biểu mẫu
+để ta có thể lấy làm mẫu mà nhỉ.
+Mà tôi cũng chẳng biết nữa.
+Thôi được rồi. Ta sẽ sử dụng
+Live Demo vậy.
+Về trigger thì
+ta đã có sẵn
+nút với thuộc tính toggle và target rồi.
+
+Vậy nên tôi sẽ chỉ sao chép phần còn lại
+
+rồi dán vào file index.html.
+Dán vào đâu cũng được. Ở đây tôi chọn dán phần code đó dưới cùng.
+
+Phía dưới phần Footer,
+dán vào.
+Ở đây, id đang là exampleModal.
+Tôi sẽ đổi id thành enroll.
+Sử dụng Command D để chọn tất cả các id cần sửa thành Enroll.
+
+Lưu lại.
+Khi nhấn vào nút
+Start The Enrollment,
+ta thấy có một modal bật lên.
+Nội dung modal trống trơn, chưa có gì hết.
+
+Chỉ biết là modal hoạt động bình thường thôi.
+Chuyển đến phần modal.
+Lưu file.
+Để nguyên phần modal-footer.
+Trong phần modal-body,
+ta sẽ tạo một biểu mẫu.
+Đầu tiên, ta sẽ
+tạo một đoạn văn bản.
+Sử dụng lớp lead.
+Nhập dòng chữ
+Fill out this form and we will get back to you.
+
+Bên dưới đoạn văn bản,
+ta sẽ tạo biểu mẫu.
+Nhập form.
+
+Ta sẽ chưa làm gì cả nên chưa cần thiết lập action.
+Bên trong thẻ form,
+mỗi nhãn và input
+sẽ được đặt nằm trong một thẻ div có margin bottom là 3.
+Nhập mb-3 để tạo khoảng cách giữa các trường.
+
+Ta sẽ thêm nhãn.
+
+Nhập for="first-name".
+Tiếp theo, ta sử dụng lớp
+
+col-form-label.
+First Name.
+Bên dưới nhãn
+sẽ là trường input.
+Sử dụng lớp form-control.
+Thêm id="first-name"
+cho tương ứng với nhãn.
+Lưu lại.
+Kết quả, ta được
+trường đầu tiên.
+Với các trường còn lại,
+tôi sẽ Copy-Paste cho nhanh
+vì các trường đều giống nhau.
+Dưới thẻ div có lớp mb-3,
+ta sẽ tạo thêm 3 trường nữa.
+Trường thứ 2 là
+Last Name.
+Tiếp theo là Email. Sau đó là Phone.
+
+Lưu file. Kết quả là khi nhấn nút,
+ta thấy biểu mẫu xuất hiện. Thay vì dòng chữ Save Change (lưu thay đổi),
+
+ta đổi thành Submit (nộp).
+
+Rồi. Vậy là xong.
+Trông cũng ổn mà.
+Trông thiết kế là biết từ cái lò Bootstrap mà ra rồi.
+Nhìn cái gam màu xanh này
+là biết ngay.
+Tuy nhiên, ta có thể sử dụng file sass
+thay đổi các màu cơ bản mà Bootstrap cung cấp
+cũng như một vài thứ khác
+rồi sau đó biên dịch lại
+để có được một file CSS Bootstrap tùy chỉnh của riêng mình.
+Với thiết kế này, tôi nghĩ rằng
+việc di chuyển, cuộn lên cuộn xuống trong trang rất dễ và mượt.
+Ta còn sử dụng được modal và accordion.
+Thiết kế rất responsive. Ta còn có cả menu hamburger.
+Ta đạt được tất cả những điều trên mà
+hầu như không phải viết CSS hay code JavaScript tùy chỉnh mấy.
+
+Điều này rất tốt.
+Sau đây, tôi sẽ triển khai thiết kế này trên Hostinger.

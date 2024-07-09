@@ -1,0 +1,160 @@
+body {
+  background-color: blue;
+}
+
+.digital-cv {
+}
+
+.goal1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.team > div {
+  padding-bottom: 5px;
+}
+
+.goal,
+.team,
+.timeline,
+.scopes,
+.primary {
+  background-color: #eee;
+  padding: 10px 20px 40px 20px;
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.timeline {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.team {
+  grid-column: 2;
+}
+
+.scopes {
+  grid-row: 2;
+}
+
+h1 {
+  color: blue;
+  padding: 10px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+i {
+  font-size: 20px;
+  float: left;
+  padding: 15px 30px 15px 30px;
+  /* display: inline; */
+}
+
+.number {
+  float: left;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  /* margin: 20px; */
+  border-radius: 50%;
+  background-color: #96f;
+  border: 1px solid black;
+}
+
+p {
+  margin: 10px 0 10px 0;
+}
+
+.number1 {
+  border-bottom: 2px dotted #0ff;
+  padding-left: 15px;
+  margin-left: 70px;
+  margin-bottom: 25px;
+}
+
+.in-out {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* table */
+
+@media (max-width: 1100px) {
+  .container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  i {
+    text-align: center;
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 15px 0 15px 0;
+  }
+
+  .in-out {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .number {
+    float: none;
+  }
+
+  .number1 {
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 500px) {
+  body {
+    width: auto;
+  }
+
+  i {
+    /* text-align: center; */
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 15px 0 15px 0;
+  }
+
+  .container {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .in-out {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .number {
+    float: none;
+  }
+
+  .number1 {
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+}

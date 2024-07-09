@@ -1,0 +1,161 @@
+<!DOCTYPE html> Khai báo tài liệu, thể hiện HTML5
+
+
+<html lang=”en”>  Phần tài liệu HTML, khai báo ngôn ngữ sử dụng
+
+
+<title>Document</title> Tiêu đề, hiển thị trên tab trình duyệt
+
+<hr /> tạo đường ngang
+
+ <body>  //Nội dung trang web  </body>
+
+
+<h1> để hiển thị nội dung. có h1 -> h6
+
+
+<head> là phần đầu của trang
+
+
+<!-- , --> ẩn nội dụng (comments)
+
+
+<tr> , </tr> tạo các bảng
+<td> , </td>(giống li) 
+<th> , </th> ô như tkb
+colspan="2" bao nhiêu ô
+bgcolor="" trong style của td 
+<table align="center">  
+
+
+
+<b> , </b> in đậm chữ == <strong> , </strong>
+
+
+
+
+<i> , </i> in nghiêng chữ == <em> , </em>
+
+
+
+<ol> , </ol> danh sách theo thứ tự 1 2 3 ( phần tử cha) cần dùng thẻ li bên trong
+
+
+
+<li> , </li> các phần tử trong danh sách(phần tử con)
+
+
+<ul> , </ul> danh sách không theo thứ tự(phần tử cha) cần dùng thẻ li
+
+
+
+
+<img src="" alt="" /> tag hiển thị ảnh trong website , src nguồn lấy ảnh , alt mô tả văn bản ảnh
+
+
+
+
+
+width="" chiều rộng ảnh
+
+
+
+
+height="" chiểu cao ảnh 
+
+
+Overflow: ;
+Visible mất thanh cuộn, nếu có border sẽ lòi ra ngoài
+
+
+
+<a href="" target="_blank" > , </a> gắn đường link , có thể lồng thẻ a trong thẻ p
+để tạo đoạn văn bản kèm link
+
+
+target="_blank" mở link trong tab mới
+
+
+
+<button> , </button> taọ một nút bấm trong web
+
+
+
+
+<form> , </form> xác định mẫu được sử dụng để thu thập dữ liệu
+Thuộc tính action xác định hành động sẽ thực hiện(trên máy chủ)
+thuộc tính tardet và action nằm trong form
+Thuộc tính method chỉ định phương thức http(get, post), GET hiển thị URL, POST thì không
+Nếu attributeaction bị bỏ qua, action trỏ đến trang hiện tại
+Thuộc tính autocomplete chỉ định form có nên bật hay tắt tính năng tự động ghi nhớ, gợi ý hay không.
+
+
+
+Box-shadow: 0 3px 10px black; đổ bóng hình ảnh hoặc border ( 0 ngang, 3 dọc, 10 độ mờ)
+
+
+
+<input> hiển thị ở nhiều dạng khác nhau dựa nào type
+<input type="text"> định nghĩa một trường nhập văn bản một dòng:
+<input type="radio"> xác định nút radio
+<input type="submit> xác định nút bấm đẻ submit một biểu mẫu
+<input type="password"> định nghĩa một trường password
+<input type="reset"> định nghĩa nút reset, nút này sẽ reset tất cả các giá trị form về giá trị mặc định của chúng
+<input type="button"> định nghĩa một nút
+<input type="date"> được dùng cho các trường input cần chứa ngày tháng.
+
+Thêm required (bắt buộc nhập)
+placeholder="Enter email"
+
+phải có name, value nếu không sẽ không được submit và không có sẽ không được gửi đi
+id , type , name
+
+
+
+
+
+
+
+<label> , </label> định nghĩa một nhấn cho nhiều phần tử
+thuộc tính for của thẻ label có giá trị giống ib thẻ <input> mà bạn muốn lk
+<select>  , </select> chỉ định một mũi tên đi xuống kèm theo các lựa chọn(option)
+Các phần tử <option> chỉ định tùy chọn có thể được chọn.
+thêm selected vào option để làm chọn mạc định
+Sử dụng attributesizeđể chỉ định số lượng giá trị được hiển thị:
+Sử dụng attribute multiple cho phép người dùng chọn nhiều giá trị:
+
+
+
+
+
+
+
+
+Phần tử<textarea> xác định trường nhập nhiều dòng (vùng văn bản):
+Attribute rows chỉ định số dòng có thể nhìn thấy trong một vùng văn bản.
+Attribute cols chỉ định chiều rộng có thể nhìn thấy của một vùng văn bản.
+
+
+
+
+
+
+Phần tử <fieldset> được sử dụng để nhóm dữ liệu liên quan trong một forrm
+Phần tử<legend> xác định chú thích cho phần tử<fieldset>
+
+
+
+
+
+
+
+
+Transform: scale(0.98); khi bấm vào nút như bottom thì sẽ có chuyển động như cần bấm vào
+
+
+
+
+
+
+
+

@@ -1,0 +1,1105 @@
+
+
+
+
+
+@media (max-width: 500px)
+Khi màn hình nhỏ hơn hoặc bằng 500px thì các chức năng trong thẻ mới được sử dụng
+
+
+    flex-direction: column;
+
+
+
+
+
+có 3 cách để liên kết css với html
+inline là viết css vào trực tiếp phần tử muốn dùng VD: <h1 style="color:blue>f
+internal viết trong head
+external
+
+
+để liên kết external css vs html ta cần thẻ link
+<link href="" rel="" />
+
+
+
+Overflow: auto; nếu phần tử để margin top 10px thì sẽ đc khắc phục
+
+
+
+
+animation: slideInFromLeft 1s ease-in; hiệu ứng khi mới mở web gọi phần tử đã cho/time/tên hiệu ứng
+https://www.w3schools.com/css/css3_animations.asp
+
+
+
+width: ; chiều dài của phần tử
+auto tự động chỉnh cho phù hợp nếu từ đầu có height bị lỗi
+nếu chỉnh 100% dù có phóng to thu nhỏ cũng tự thích ứng
+min-width: ;  chiều rộng tối thiểu của một phần tử
+max-width: ; chiều rộng tối đa của một phần tử
+
+
+
+
+height: ; chiều ngang của phần tử
+auto tự động chỉnh cho phù hợp nếu từ đầu có width bị lỗi
+min-height: ; chiều cao tối thiểu của một phần tử
+max-height: ; chiều cao tối đa của một phần tử
+
+
+
+dùng :hover(khi di chuột vào
+transform: translateY(-15px); căn chỉnh khi đưa chuột vào sẽ có thay đổi theo trục dọc Y
+transition: transform 0.2s ease-in; tốc độ của transform
+
+
+
+
+
+border-spacing: 20px 40px; khoảng cách của border
+
+border-collapse: ;
+separate
+collapse mất các ô bao quanh tablet
+
+
+
+empty-cells: ; chỉ định có hay không hiển thị đường viền và nền trên các ô trống trong bảng
+hide ẩn ô trống trong border
+show đường viền có 1 ô trống được hiển thị
+
+
+table-layout: ; chỉ định chiều rộng của table
+auto tự động chỉnh phù hợp với văn bản
+fixed mặc định
+
+
+
+
+caption-side: ; chỉ định vị trí của chú thích bảng
+top nằm trên cùng
+
+
+
+
+
+list-style-image: url(""); chỉ định một hình ảnh được sử dụng làm điểm đánh dấu mục danh sách
+
+
+
+list-style-position: ; chỉ định vị trí của hộp đánh dấu
+outside mặc định
+inside
+
+
+
+list-style: square outside none; tốc ký
+(list-style-type: square;
+list-style-position: outside;
+list-style-image: none;)
+
+
+
+
+
+
+
+
+
+
+background-image: url(""); chèn ảnh nền
+
+
+background-position: center; căn giữa hình ảnh
+
+
+background-repeat: ; Thuộc tính lặp lại nền chỉ định cách hình ảnh nền được lặp lại
+repeat-x lặp lại hình nền theo chiều ngang
+repeat-y sẽ chỉ lặp lại hình nền theo chiều dọc.
+no-repeat không lặp
+inherit kế thừa
+
+
+
+background-attachment: ;đặt xem hình nền được cố định hay cuộn với phần còn lại của trang.
+fixed khi cuộn nền vẫn ở đây
+scroll khi cuộn xuồng nền sẽ dần đi lên
+inherit kế thừa
+
+
+
+
+
+margin: ; được sử dụng để tạo không gian xung quanh các phần tử(chỉ dùng 1 px=cả 4 cạnh)
+margin-top
+margin-right
+margin-bottom
+margin-left
+dùng nhanh margin: 25px 50px 75px 100px; thứ tự: trên, phải, dưới, trái
+auto tự động căn giữa phần tử theo chiều ngang trong vùng chứa nó
+inherit kế thừa phần tử cha
+
+
+padding tạo không gian quang nội dung phần tử trong đường viền đã được xác định
+các lệch gọi giống margin
+dùng với phần tử width thì sẽ cộng dồn với padding
+thêm   background-color: lightblue; để giữ ở nguyên width
+
+
+
+position: ;
+static Các phần tử được định vị static không bị ảnh hưởng bởi các thuộc tính trên, dưới, trái và phải.
+relative tương đối (thường dùng trong body hoặc mã gần giống để xác định đúng vị trí)
+fixed cố định, khi gắn vào 1 vị trí dù trượt xuống hay đi đây vẫn đứng ở đấy
+absolute tuyệt đối 
+sticky
+dùng với top, left, right, bottom
+
+
+
+font-size: ; kích thước văn bản
+
+
+font-variant: ; chuyển đổi phông chữ
+normal bình thường
+small-caps chữ nhỏ nhưng in hoa
+
+
+dùng table
+vertical-align: ; chỉnh văn bản theo chiều dọc 
+top trên cùng
+middle giữa
+bottom cuối
+còn cái khác
+baseline giữ nguyên
+sub hạ xuống chút
+super lên chú
+-10px hạ
+
+
+font-weight: ; chọn độ đậm cho văn bản
+lighter nhạt
+bold đậm
+border đậm hơn
+có thể dùng số 100 - 900, 400=normal, 700=bold
+
+
+
+
+
+
+font-family: ; thay đổi phông chữ
+
+
+letter-spacing: ; chỉ định khoảng cách giữa văn bản
+normal không có gì
+length 
+inherit kế thừa phần tử cha
+letter-spacing: 4px; mỗi từ sẽ tách riêng lẻ dù trong html có liền
+dùng giá trị âm văn bản sẽ đè lên nhau (-1,5px)
+
+
+
+word-spacing: ; chỉ định khoảng cách cụm văn bản
+normal không có gì
+length 
+inherit kế thừa phần tử cha
+
+
+
+text-transform: ; thay đổi kiểu văn bản
+uppercase chuyển văn bản thành chữ in hoa
+capitalize viết hoa những chữ cái đầu
+lowercase các chữ cái hoa thành viết thường
+
+
+
+font-style: ; 
+font-style: italic; in nghiêng văn bản
+normal bình thường
+oblique nghiêng hơn
+
+
+
+line-height: ; chiều cao dòng text
+font-weight xác định độ dày hoặc mỏng của các ký tự trong văn bản
+bold để in đậm văn bản
+
+
+
+cursor: ;
+help hiện dấu hỏi cạnh con chuột
+default mặc định
+crosshair dấu + giống tâm trong game =))
+pointer hình bàn tay
+text hình khi kéo văn bản
+wait đồng hồ cát
+
+
+
+
+
+text-align: ; chỉnh vị trí văn bản
+center chình văn bản ở giữa
+justify chiều rộng của mỗi dòng văn bản bằng nhau
+right căn phải văn bản
+left;(mặc định) căn trái văn bản
+
+
+
+Muốn tạo chú thích trong CSS chúng ta dùng cặp /* và */
+
+
+
+--------------------bộ chọn CSS------------------------
+chọn nhiều phần tử để style VD: h1, h2, h3, h4, p, li{
+                                }
+
+
+article footer p {
+}  chọn tất cả phần tử p nằm trong phần tử footer(chọn dậu duệ)
+
+
+
+
+
+
+id, class là bộ chọn để chọn phần tử từ HTML qua CSS. "#" với id, "." với class
+
+
+
+
+Muốn cmt trong CSS chúng ta dùng cặp /* và */
+cachs nhanh để bật/tắt: bôi đen ctrl + / để cmt, ctrl + # để tắt
+
+
+
+
+
+
+list-style: ;
+none để tắt hiệu ứng của phần tử VD: ul {
+                                       list-style: none;
+                                     }
+
+color trong CSS, mỗi màu có độ, có RGB
+Màu sắc trong bảng màu rgb(red,green,blue) trong CSS được xác định lần lượt bởi 3 giá trị red(0-255), green(0-255), blue(0-255)
+Giá trị 0-255 thể hiện cường độ màu, với mỗi sự kết hợp sẽ tạo ra một màu cụ thể. Ví dụ: rgb(0,0,0) – màu đen, rgb(255,0,0) - màu đỏ, …
+RGB với hệ số alpha sẽ là RGBA, alpha thể hiện mức trọng suốt(0-1). 1 đậm nhất, 0 trong nhất
+ff có giá trị là 255
+
+
+
+
+background-color: ; chỉnh màu nền
+border: ;
+border: 5px solid #1098ad; , viền 4 cạnh vuông , px là kích thước viền, solid tạo viền, #1098ad màu 
+dottid viền bằng dấu chấm
+dashed viền bằng dấu gạch ngang
+border-top: 5px solid #1098ad; mỗi viền trên
+border-bottom: 5px solid #1098ad; mỗi viền dưới
+(có thể lồng 2 viền trên và dưới để có cả trên dưới)
+border-left: 5px solid #1098ad; viền phải
+border-right: 5px solid #1098ad; viền phải
+có thể tách riêng "paading: 10px;
+                   border-style: solid;
+                   border-width: 5px;
+                   border-color: ;"
+
+
+
+
+
+
+--------------------------lớp giả--------------------------
+phần tử + chức năng {}
+VD:
+li:first-child {
+} li là phần tử muốn dùng, : để dùng lớp giả
+
+
+
+:first-child gọi phần tử đầu tiên của phần tử cha
+
+
+
+:last-child dùng phần tử cuối của phần tử cha
+
+
+
+:nth-child(1) chỉ định dòng cần dùng
+(odd) dùng các dòng lẻ
+(ever) dùng các số chẵn
+
+
+
+Selecttor a:link chọn tất cả các thẻ a có thuộc tính href
+text-decoration: none; xóa dầu gạch ngang dưới link
+text-decoration: underline; khi tắt nhưng thêm dòng này sẽ hiển thị dầu gạch ngang
+thêm dotted sẽ là gạch ngang = dấu chấm
+wavy sóng lượn
+
+
+text-indent: ; độ thụt vào của văn bản đầu dòng 
+dùng px, %
+
+
+text-shadow: 5px 2px 4px grey; độ đổ bóng của văn bản
+5px tọa độ x
+2px tọa độ y
+4px bán kính mờ
+grey màu
+text-shadow: rgb(0,0,255,1) -1px -2px 0.5em;
+
+
+
+
+text-decoration: ; trang trí văn bản .................................
+none không có gì
+inherit kế thừa phần tử cha
+overline có ngạch ngang trên văn bản
+underline gạch ngang dưới văn bản
+line-through văn bản có gạch ngang qua văn bản
+blink văn bản nhấp nhảy (hầu như không dùng)
+
+
+
+a:link - xác định kiểu cho các liên kết không được truy cập bình thường
+
+
+
+ a:visited - xác định kiểu cho các liên kết đã truy cập
+
+
+
+
+a:hover - một liên kết sẽ hoạt động khi bạn nhấp vào liên kết đó
+
+
+
+a:active - một liên kết được di chuột khi di chuột qua nó
+
+----------------------phần tử giả------------------------
+phần tử giả có :: 2 dấu 2 chấm 
+
+
+
+Phần tử giả::before có thể sử dụng để chèn nội dung vào trước một phần tử.
+Phần tử giả::after có thể sử dụng để chèn nội dung vào sau một phần tử.
+
+
+
+Phần tử giả::marker chọn các điểm đánh dấu của các mục danh sách.
+
+
+
+Phần tử giả ::selection khớp với phần của phần tử mà người dùng chọn.
+
+
+
+
+
+Phần tử giả::first-letter được sử dụng để thêm một kiểu đặc biệt vào chữ cái đầu tiên của văn bản.
+
+
+
+
+
+Phần tử giả::first-line được sử dụng để tạo kiểu đặc biệt cho dòng đầu tiên của văn bản.
+
+
+
+------------------dạng boxes----------------------------
+có  3 loại boxes: inline, block, inline-block
+
+block có thể đặt height và width cho element, sẽ bắt đầu dòng mới, full chiều rộng
+
+inline không thể đặt height, width. chỉ chiếm đủ không gian cần để hiển thị, không bắt đầu trên dòng mới
+
+inline-block tính chất giống inline, tuy nhiên có thể đặt height, width
+
+
+display: ;
+block
+inline không thể dùng được các dòng -top, -bottom
+inline-block đùng được -top, bottom
+
+
+
+
+float được sử dụng để định vị và định dạng nội dung
+left- Phần tử nổi ở bên trái vùng chứa của nó
+right- Phần tử nổi bên phải vùng chứa của nó
+none- Phần tử không nổi (chỉ hiển thị ở vị trí nó xuất hiện trong văn bản). Đây là mặc định
+inherit- Phần tử kế thừa giá trị float của phần tử cha
+
+
+clear: ;
+both xóa float
+
+
+.clearfix::affter hack clearfix
+
+
+
+
+
+box-sizing cho phép chúng ta bao gồm phần đệm và đường viền trong tổng chiều rộng và chiều cao của phần tử.
+Nếu bạn đặt box-sizing: border-box;trên một phần tử, phần đệm và đường viền được bao gồm trong chiều rộng và chiều cao:
+
+
+
+
+
+
+
+
+-----------------------------------------flexbox------------------------------------
+
+
+Justify-content là thuộc tính căn chỉnh cho toàn bộ các item theo khoảng không gian có sẵn trên trục chính
+Flex-start (giá trị mặc định)
+Flex-end: Các item được đặt ở cuối container
+Center: Các item được đặt ở trung tâm container
+Space-between: Các item sẽ có khoảng cách ở giữa chúng
+Space-around: Các item sẽ có khoảng cách trước, giữa và sau chúng
+Space-evenly: Các item sẽ có khoảng không gian bằng nhau xung quanh chúng
+
+
+
+
+Flex-wrap: wrap; khi kích thước ảnh nhỏ lại thì sẽ xuống dòng không thay đổi kích thước phất của phần tử
+
+
+
+
+flex-direction: column; làm cho phần tử cạnh nhau xuống dòng
+
+
+
+Align-items: ; là thuộc tính căn chỉnh theo chiều dọc
+Stretch giá trị mặc định
+Center Các item được đặt ở trung tâm container
+Flex-start Các item được đặt ở đầu container
+Flex-end: Các item được đặt ở cuối container
+Baseline: Các item được đặt trên đường cơ sở của container
+
+
+
+
+flex-items: 
+Align-self: ghi đè lên thuộc tính align-items, cho items cụ thể
+
+
+
+gap: ; tạo khoảng cách giữa các phần tử trong flex box
+
+
+
+align-self 
+
+
+order vị trí của phần tử
+
+
+
+flex-wrap thuộc tính sẽ yêu cầu CSS bọc các mục
+nowrap: đây là cài đặt mặc định và không bao bọc các mục.
+wrap: bọc các mục trên nhiều dòng từ trên xuống dưới nếu chúng nằm trong hàng và từ trái sang phải nếu chúng nằm trong cột.
+wrap-reverse: bọc các mục trên nhiều dòng từ dưới lên trên nếu chúng nằm trong hàng và từ phải sang trái nếu chúng nằm trong cột.
+
+
+
+
+flex-shrink Con số càng cao, nó sẽ càng co lại so với các vật phẩm khác trong thùng chứa
+số to sẽ co lại
+
+
+
+flex-grow kiểm soát kích thước của các mục khi vùng chứa chính mở rộng.
+số to sẽ tăng
+
+
+
+
+flex-basis chỉ định kích thước ban đầu của mục trước khi CSS thực hiện điều chỉnh với flex-shrinkhoặc flex-grow.
+
+
+
+
+----------------------------------CSS GRID----------------------------------
+
+
+
+Các thuộc tính cho grid-container:
+
+
+
+grid-template-rows: ; chiều cao của một hàng
+grid-template-columns: repeat(4, 1fr); 4  là số cột, 1fr là kích thước lấp đầy
+auto-fill nằm trong repeat để tự căn chỉnh để hết phần contaier
+auto-fit
+
+
+
+grid-template-columns: minmax(60px, 1fr); , 60 chiều rộng tối thiểu, 1fr chiều rộng tối đa
+
+
+
+grid-template-columns: ; tạo cột
+
+
+row-gap: ; khoảng cách giữa các hàng
+
+
+column-gap: ; khoảng cách giữa các cột
+
+
+
+
+ Các thuộc tính cho grid-items:
+
+Grid-row: 2/3; đặt vị trí cho hàng
+
+Grid-column: 2/3; đặt bị trí cột
+
+
+-------
+
+1fr lấp đầy khoảng trắng trong css grid
+số sau fr càng cao sẽ được nhiều không gian
+
+
+
+
+-------------------------------------------------------------
+(sử dụng trong display: grid; hoặc inline- grid)
+grid-template-columns: ; xác định chiều rộng của mỗi cột
+
+
+
+
+grid-template-rows: ; xác định chiều cao của mỗi hàng.
+===============================================================
+
+
+căn chỉnh theo chiều ngang, trên trục hàng
+justify-content: ; được sử dụng để căn chỉnh toàn bộ lưới bên trong vùng chứa
+space-evenly căn giữa các hàng với nhau
+space-around
+space-between nếu có 3 cột 2 cột ngoài nàm sát ngoài cột giữa xếp giữa
+center
+start trái ngoài cùng
+end phải ngoài cùng
+
+
+
+
+
+align-content: ; căn chỉnh theo chiều dọc, trên trục cột
+center
+space-evenly
+space-around
+space-between
+start
+end
+
+
+
+
+align-items: ;
+center căn giữa giá trị các ô trong lưới
+
+
+
+justify-items: ; căn chỉnh trong lưới
+center căn giữa giá trị trong trong lưới
+stretch kéo background ô hết phần lưới
+
+
+
+
+align-self: ; dùng để đưa giá trị riêng biệt, tách với align-items
+
+justify-self: ; tách với justify-items
+
+
+
+
+grid-area: footer;
+
+
+
+grid-column-gap: 20px; khoảng cách cột
+
+
+grid-row-gap: ; khoảng cách hàng
+
+
+
+grid-gap: 10px 20px; 10 khoảng cách hàng, 20 khoảng cách cột
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
